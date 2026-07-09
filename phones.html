@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>App preview</title>
 <style>
-  :root{ --bg:#07070D; }
+  :root{ --bg:#07070D; --glow:#12121a; }
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{width:100%;height:100%;overflow:hidden;background:
-    radial-gradient(120% 90% at 50% 0%, #12121a, var(--bg) 60%);
+    radial-gradient(120% 90% at 50% 0%, var(--glow), var(--bg) 60%);
     font-family:system-ui,sans-serif}
   .stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
     gap:min(3vw,40px);padding:4% 3%}
@@ -39,6 +39,8 @@
 <script>
   const q = new URLSearchParams(location.search);
   const src = q.get('src') || 'about:blank';
+  if (q.get('bg')) document.documentElement.style.setProperty('--bg', '#' + q.get('bg'));
+  if (q.get('glow')) document.documentElement.style.setProperty('--glow', '#' + q.get('glow'));
   // three scroll offsets so the phones show different parts of the app
   const offsets = [0, 620, 1180];
   const phones = [...document.querySelectorAll('.phone')];
