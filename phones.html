@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App preview</title>
+<style>
+  :root{ --bg:#07070D; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:100%;height:100%;overflow:hidden;background:
+    radial-gradient(120% 90% at 50% 0%, #12121a, var(--bg) 60%);
+    font-family:system-ui,sans-serif}
+  .stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    gap:min(3vw,40px);padding:4% 3%}
+  .phone{position:relative;flex:none;height:82%;aspect-ratio:9 / 19.5;
+    background:#0a0a0c;border-radius:15% / 7%;
+    border:2px solid #23232b;
+    box-shadow:0 50px 90px -25px rgba(0,0,0,.95), inset 0 0 0 2px #000;
+    overflow:hidden}
+  .phone.mid{height:96%;z-index:3;box-shadow:0 70px 120px -30px rgba(0,0,0,.98), inset 0 0 0 2px #000}
+  .phone.side{opacity:.96}
+  .phone.l{transform:rotate(-4deg) translateY(3%)}
+  .phone.r{transform:rotate(4deg) translateY(3%)}
+  .screen{position:absolute;inset:6px;border-radius:13% / 6%;overflow:hidden;background:#0b0b0e}
+  .screen iframe{position:absolute;top:0;left:0;width:390px;height:844px;border:0;
+    transform-origin:top left;pointer-events:none;background:#0b0b0e}
+  .notch{position:absolute;top:7px;left:50%;transform:translateX(-50%);
+    width:32%;height:14px;background:#000;border-radius:0 0 12px 12px;z-index:4}
+  .glare{position:absolute;inset:0;z-index:5;pointer-events:none;border-radius:15% / 7%;
+    background:linear-gradient(115deg,rgba(255,255,255,.06),transparent 30%)}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="phone side l"><div class="screen"></div><div class="notch"></div><div class="glare"></div></div>
+  <div class="phone mid"><div class="screen"></div><div class="notch"></div><div class="glare"></div></div>
+  <div class="phone side r"><div class="screen"></div><div class="notch"></div><div class="glare"></div></div>
+</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  const src = q.get('src') || 'about:blank';
+  // three scroll offsets so the phones show different parts of the app
+  const offsets = [0, 620, 1180];
+  const phones = [...document.querySelectorAll('.phone')];
+
+  function fit(){
+    phones.forEach(ph=>{
+      const scr = ph.querySelector('.screen');
+      const f = scr.querySelector('iframe');
+      if(!f) return;
+      const s = scr.clientWidth / 390;           // scale the 390px mobile viewport to fit
+      f.style.transform = 'scale(' + s + ')';
+    });
+  }
+
+  phones.forEach((ph,i)=>{
+    const f = document.createElement('iframe');
+    f.src = src; f.setAttribute('scrolling','no'); f.loading = 'eager';
+    ph.querySelector('.screen').appendChild(f);
+    f.addEventListener('load', ()=>{
+      try { f.contentWindow.scrollTo(0, offsets[i] || 0); } catch(e){}
+    });
+  });
+  fit();
+  addEventListener('resize', fit);
+  // re-fit a couple times as fonts/layout settle
+  setTimeout(fit, 400); setTimeout(fit, 1200);
+</script>
+</body>
+</html>

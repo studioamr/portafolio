@@ -210,8 +210,10 @@
 /* ---- apps & platforms ---- */
 const APPS = [
   {name:"PARFECT",cat:"App · Golf analytics",url:"https://parfectapp.github.io/parfect/",host:"parfect.app",
+   preview:"phones.html?src=https://parfectapp.github.io/parfect/",
    desc:"Every shot, every green, every pattern. Golf analytics that turns your rounds into decisions — not nostalgia."},
   {name:"ABONO",cat:"App · AgTech",url:"https://parfectapp.github.io/agrofin/",host:"abono.mx",
+   preview:"phones.html?src=https://parfectapp.github.io/agrofin/",
    desc:"Total control of a greenhouse — costs, irrigation, yield and sales. And the only question that matters: did you make money?"},
   {name:"NORTHPOINT",cat:"Platform · Trading",url:"northpoint/index.html?v=49",host:"northpoint.trade",
    desc:"A trading academy and journal in one: logbook, calendar, money-management and an AI coach that reads your trades."},
@@ -263,7 +265,7 @@ function renderInto(list, elId){
           <div class="load">Cargando ${p.name}…</div>
           ${p.img
             ? `<img class="shot-img" src="${p.img}" alt="${p.name}" loading="lazy">`
-            : `<iframe data-src="${p.url}" scrolling="no" title="${p.name}" tabindex="-1"></iframe>`}
+            : `<iframe data-src="${p.preview || p.url}" scrolling="no" title="${p.name}" tabindex="-1"></iframe>`}
           <div class="veil"></div>
           ${p.imgs ? `<div class="slides">${p.imgs.map(u=>`<img class="slide" src="${u}" alt="" loading="lazy">`).join('')}</div>` : ''}
         </div>
