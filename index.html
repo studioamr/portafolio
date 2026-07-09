@@ -172,7 +172,7 @@ const P = [
    desc:"Technical mountain apparel in counted editions. Faceless silhouettes, noble materials, your own number."},
   {name:"HEARTS",cat:"Game · Battle royale",url:"https://parfectapp.github.io/hearts/landing.html",host:"hearts.gg",
    desc:"An animal battle royale — predators vs. prey — with a marketplace, a wallet and a three-phase ranked ladder."},
-  {name:"MONSTER KEBABS",cat:"Brand · Dark kitchen",url:"https://parfectapp.github.io/monster-kebabs/fotos.html",host:"monsterkebabs.mx",
+  {name:"MONSTER KEBABS",cat:"Brand · Dark kitchen",url:"https://parfectapp.github.io/monster-kebabs/fotos.html",host:"monsterkebabs.mx",peek:300,
    desc:"A premium kebab dark kitchen in Morelia. Kaiju universe, KEBO the mascot, collectible stickers. Feed the monster."},
 ];
 
@@ -196,7 +196,7 @@ P.forEach((p,i)=>{
       </div>
       <div class="stage">
         <div class="load">Cargando ${p.name}…</div>
-        <iframe data-src="${p.url}" scrolling="no" title="${p.name}" tabindex="-1"></iframe>
+        <iframe data-src="${p.url}" ${p.peek?`style="height:210%;transform:translateY(-${p.peek}px) scale(.7)"`:''} scrolling="no" title="${p.name}" tabindex="-1"></iframe>
         <div class="veil"></div>
       </div>
     </a>`;
