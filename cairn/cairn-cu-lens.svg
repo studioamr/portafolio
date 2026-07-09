@@ -1,0 +1,12 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><defs><filter id="inkLN" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.018" numOctaves="3" seed="67" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="6" xChannelSelector="R" yChannelSelector="G"/></filter><filter id="gLN" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7"/></filter></defs>
+<ellipse cx="120" cy="130" rx="80" ry="34" fill="#C96F2B" opacity="0.3" filter="url(#gLN)"/>
+<g filter="url(#inkLN)">
+<path d="M28 92 C56 78 88 72 120 72 C152 72 184 78 212 92 C220 96 222 104 220 112 L20 112 C18 104 20 96 28 92 Z" fill="#141210"/>
+<path d="M20 110 C18 122 24 134 36 142 L48 128 Z" fill="#141210"/>
+<path d="M220 110 C222 122 216 134 204 142 L192 128 Z" fill="#141210"/>
+</g>
+<path d="M26 106 C26 98 38 92 56 90 L184 90 C202 92 214 98 214 106 C214 128 194 148 158 154 L82 154 C46 148 26 128 26 106 Z" fill="#C96F2B" filter="url(#inkLN)"/>
+<path d="M48 100 L118 96 L106 144 L58 138 Z" fill="#EAE6DF" opacity="0.4" filter="url(#inkLN)"/>
+<path d="M140 98 L164 97 L156 138 L134 134 Z" fill="#EAE6DF" opacity="0.25" filter="url(#inkLN)"/>
+<path d="M60 176 C100 168 140 168 180 176" fill="none" stroke="#EAE6DF" stroke-width="1.8" opacity="0.25"/>
+</svg>

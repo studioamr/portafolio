@@ -1,0 +1,13 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><defs><filter id="inkBR" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.014 0.02" numOctaves="3" seed="61" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+<g filter="url(#inkBR)">
+<path d="M56 20 C40 60 36 90 40 108 L200 108 C206 84 204 48 192 20 C148 10 100 10 56 20 Z" fill="#141210"/>
+<path d="M14 104 C80 92 160 92 226 104 C232 110 230 122 222 126 C158 116 82 116 18 126 C10 122 8 110 14 104 Z" fill="#141210"/>
+<circle cx="36" cy="160" r="2.5" fill="#141210"/>
+<circle cx="204" cy="168" r="2" fill="#141210"/>
+</g>
+<path d="M60 66 C104 58 136 58 180 66" fill="none" stroke="#EAE6DF" stroke-width="2" opacity="0.35"/>
+<path d="M70 126 C84 160 104 186 118 200" fill="none" stroke="#141210" stroke-width="5" filter="url(#inkBR)"/>
+<path d="M170 126 C156 160 136 186 122 200" fill="none" stroke="#141210" stroke-width="5" filter="url(#inkBR)"/>
+<circle cx="120" cy="206" r="8" fill="#C96F2B"/>
+<path d="M104 200 C112 206 128 206 136 200" fill="none" stroke="#C96F2B" stroke-width="2.4" opacity="0.7"/>
+</svg>

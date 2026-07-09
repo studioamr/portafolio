@@ -1,0 +1,15 @@
+<svg viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice"><defs><filter id="inkRG" x="-10%" y="-25%" width="120%" height="150%"><feTurbulence type="fractalNoise" baseFrequency="0.008 0.02" numOctaves="3" seed="19" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="6" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+<path d="M250 40 A170 170 0 0 1 590 40" fill="none" stroke="#C96F2B" stroke-width="1.2" opacity="0.25" stroke-linecap="round"/>
+<path d="M300 52 A120 120 0 0 1 540 52" fill="none" stroke="#C96F2B" stroke-width="1.6" opacity="0.4" stroke-linecap="round"/>
+<path d="M0 150 L80 96 L140 120 L220 70 L300 118 L380 92 L460 128 L560 84 L640 116 L720 96 L800 130 L900 108 L900 180 L0 180 Z" fill="#141210" opacity="0.16" filter="url(#inkRG)"/>
+<g filter="url(#inkRG)">
+<path d="M0 168 L110 108 L170 132 L260 84 L330 128 L420 58 L500 120 L590 96 L680 138 L780 108 L900 148 L900 180 L0 180 Z" fill="#141210"/>
+<circle cx="152" cy="150" r="2" fill="#141210"/>
+<circle cx="700" cy="158" r="2.5" fill="#141210"/>
+</g>
+<path d="M420 62 L404 88 L412 84 L420 96 L430 82 L436 90 Z" fill="#EAE6DF" opacity="0.4" filter="url(#inkRG)"/>
+<path d="M260 88 L252 102 L258 98 L264 106 Z" fill="#EAE6DF" opacity="0.3" filter="url(#inkRG)"/>
+<path d="M420 58 L420 34" stroke="#C96F2B" stroke-width="1.6" opacity="0.9"/>
+<circle cx="420" cy="30" r="4" fill="#C96F2B"/>
+<rect x="448" y="36" width="26" height="10" fill="none" stroke="#C96F2B" stroke-width="1.4" opacity="0.8"/>
+</svg>

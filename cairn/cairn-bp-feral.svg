@@ -1,0 +1,13 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><defs><filter id="ink139" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.014 0.02" numOctaves="3" seed="139" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+<ellipse cx="120" cy="214" rx="72" ry="8" fill="rgba(20,18,16,0.05)"/>
+<path d="M56 44 A80 80 0 0 1 184 44" fill="none" stroke="#C96F2B" stroke-width="1.2" opacity="0.3" stroke-linecap="round"/>
+<path d="M68 56 A62 62 0 0 1 172 56" fill="none" stroke="#C96F2B" stroke-width="1.7" opacity="0.45" stroke-linecap="round"/>
+<g filter="url(#ink139)">
+<path d="M96 56 L144 56 L150 66 C160 70 168 78 170 90 L174 112 C175 118 170 122 164 120 L156 114 L156 186 C156 192 152 196 146 196 L94 196 C88 196 84 192 84 186 L84 114 L76 120 C70 122 65 118 66 112 L70 90 C72 78 80 70 90 66 Z" fill="#141210"/>
+<path d="M100 56 L120 82 L140 56 L132 56 L120 72 L108 56 Z" fill="#141210"/>
+<circle cx="62" cy="150" r="2.5" fill="#141210"/><circle cx="180" cy="140" r="2" fill="#141210"/>
+</g>
+<path d="M100 56 L120 82 L140 56" fill="none" stroke="#EAE6DF" stroke-width="3" opacity="0.5"/>
+<path d="M72 92 L84 96" stroke="#EAE6DF" stroke-width="4" opacity="0.4"/><path d="M168 92 L156 96" stroke="#EAE6DF" stroke-width="4" opacity="0.4"/>
+<rect x="104" y="106" width="14" height="22" fill="#C96F2B"/><rect x="122" y="106" width="14" height="22" fill="none" stroke="#C96F2B" stroke-width="2.4"/>
+<rect x="94" y="160" width="22" height="9" fill="none" stroke="#EAE6DF" stroke-width="1.6" opacity="0.4"/></svg>

@@ -1,0 +1,13 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><defs><filter id="inkBF" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.014 0.02" numOctaves="3" seed="41" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+<g filter="url(#inkBF)">
+<path d="M16 20 C80 8 160 8 224 20 C228 34 228 48 224 60 C160 50 80 50 16 60 C12 48 12 34 16 20 Z" fill="#141210"/>
+<path d="M14 74 C80 62 160 62 226 74 C230 90 230 106 226 118 C160 108 80 108 14 118 C10 106 10 90 14 74 Z" fill="#141210"/>
+<path d="M16 132 C80 120 160 120 224 132 C228 146 228 160 224 172 C160 162 80 162 16 172 C12 160 12 146 16 132 Z" fill="#141210"/>
+<path d="M18 186 C80 176 160 176 222 186 C226 198 226 210 222 220 C160 212 80 212 18 220 C14 210 14 198 18 186 Z" fill="#141210"/>
+</g>
+<path d="M40 40 C90 32 150 32 200 40" fill="none" stroke="#EAE6DF" stroke-width="1.6" opacity="0.25"/>
+<path d="M40 96 C90 88 150 88 200 96" fill="none" stroke="#EAE6DF" stroke-width="1.6" opacity="0.25"/>
+<path d="M40 152 C90 144 150 144 200 152" fill="none" stroke="#EAE6DF" stroke-width="1.6" opacity="0.25"/>
+<circle cx="120" cy="125" r="7" fill="#C96F2B"/>
+<path d="M120 132 L120 168" stroke="#C96F2B" stroke-width="2.4"/>
+</svg>

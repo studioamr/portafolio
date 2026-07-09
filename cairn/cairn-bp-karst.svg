@@ -1,0 +1,14 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><defs><filter id="ink121" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.014 0.02" numOctaves="3" seed="121" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+<ellipse cx="120" cy="214" rx="72" ry="8" fill="rgba(20,18,16,0.05)"/>
+<path d="M56 44 A80 80 0 0 1 184 44" fill="none" stroke="#C96F2B" stroke-width="1.2" opacity="0.3" stroke-linecap="round"/>
+<path d="M68 56 A62 62 0 0 1 172 56" fill="none" stroke="#C96F2B" stroke-width="1.7" opacity="0.45" stroke-linecap="round"/>
+<g filter="url(#ink121)">
+<path d="M96 78 C96 58 106 48 120 48 C134 48 144 58 144 78 C144 88 140 94 136 96 L104 96 C100 94 96 88 96 78 Z" fill="#141210"/>
+<path d="M84 96 L156 96 C166 100 170 110 172 122 L172 148 C172 154 166 158 160 156 L152 150 L152 160 L88 160 L88 150 L80 156 C74 158 68 154 68 148 L68 122 C70 110 74 100 84 96 Z" fill="#141210"/>
+<path d="M90 162 L114 162 L112 210 L92 210 Z" fill="#141210"/>
+<path d="M126 162 L150 162 L148 210 L128 210 Z" fill="#141210"/>
+<circle cx="62" cy="130" r="2.5" fill="#141210"/><circle cx="180" cy="140" r="2" fill="#141210"/>
+</g>
+<circle cx="106" cy="110" r="1.6" fill="#EAE6DF" opacity="0.5"/><circle cx="128" cy="122" r="1.6" fill="#EAE6DF" opacity="0.5"/><circle cx="146" cy="112" r="1.6" fill="#EAE6DF" opacity="0.5"/><circle cx="100" cy="140" r="1.6" fill="#EAE6DF" opacity="0.5"/><circle cx="138" cy="142" r="1.6" fill="#EAE6DF" opacity="0.5"/><circle cx="100" cy="185" r="1.6" fill="#EAE6DF" opacity="0.5"/><circle cx="140" cy="190" r="1.6" fill="#EAE6DF" opacity="0.5"/>
+<circle cx="120" cy="104" r="4" fill="#C96F2B"/><path d="M120 108 L120 126" stroke="#C96F2B" stroke-width="2"/>
+<rect x="152" y="120" width="22" height="9" fill="none" stroke="#C96F2B" stroke-width="1.6"/></svg>

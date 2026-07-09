@@ -1,0 +1,17 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><defs><filter id="inkMO" x="-35%" y="-35%" width="170%" height="170%"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.017" numOctaves="3" seed="64" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="14" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+<ellipse cx="120" cy="210" rx="72" ry="8" fill="rgba(20,18,16,0.05)"/>
+<path d="M56 46 A80 80 0 0 1 184 46" fill="none" stroke="#C96F2B" stroke-width="1.2" opacity="0.3" stroke-linecap="round"/>
+<path d="M68 58 A62 62 0 0 1 172 58" fill="none" stroke="#C96F2B" stroke-width="1.7" opacity="0.45" stroke-linecap="round"/>
+<g filter="url(#inkMO)">
+<path d="M98 52 L142 52 L146 70 L94 70 Z" fill="#141210"/>
+<path d="M84 70 L156 70 C166 74 172 84 174 98 L176 192 C176 198 172 202 166 202 L74 202 C68 202 64 198 64 192 L66 98 C68 84 74 74 84 70 Z" fill="#141210"/>
+<path d="M70 78 L48 92 L42 164 C41 170 45 174 51 174 L62 170 Z" fill="#141210"/>
+<path d="M170 78 L192 92 L198 164 C199 170 195 174 189 174 L178 170 Z" fill="#141210"/>
+<circle cx="60" cy="192" r="2.5" fill="#141210"/>
+<circle cx="184" cy="184" r="2" fill="#141210"/>
+</g>
+<circle cx="86" cy="96" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="104" cy="112" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="140" cy="100" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="152" cy="128" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="92" cy="142" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="124" cy="152" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="148" cy="168" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="80" cy="176" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="112" cy="186" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="134" cy="118" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="106" cy="164" r="1.4" fill="#EAE6DF" opacity="0.55"/><circle cx="160" cy="150" r="1.4" fill="#EAE6DF" opacity="0.55"/>
+<rect x="118" y="74" width="4" height="42" fill="#C96F2B"/>
+<circle cx="120" cy="120" r="4" fill="#C96F2B"/>
+<rect x="138" y="138" width="24" height="18" fill="none" stroke="#C96F2B" stroke-width="1.6"/>
+</svg>
