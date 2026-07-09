@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>André Macouzet — Founder & builder · Data Scientist</title>
+<meta name="description" content="Founder & builder and data scientist in Morelia. I design and build products end to end — 7 live projects across FinTech, AgTech, retail and games.">
+<meta property="og:title" content="André Macouzet — I build things that ship">
+<meta name="theme-color" content="#0A0A0B">
+<link rel="stylesheet" href="css/style.css?v=5">
+<style>
+  /* ---- portafolio: live-preview tiles over OBRA's design ---- */
+  /* ---- big alternating showcases (OBRA look) ---- */
+  .cases{display:flex;flex-direction:column;gap:clamp(80px,15vh,180px)}
+  .case{display:grid;grid-template-columns:0.9fr 1.25fr;gap:clamp(30px,5vw,80px);align-items:center}
+  .case:nth-child(even){grid-template-columns:1.25fr 0.9fr}
+  .case:nth-child(even) .case-info{order:2}
+  .case:nth-child(even) .case-media{order:1}
+  @media(max-width:900px){
+    .case,.case:nth-child(even){grid-template-columns:1fr;gap:26px}
+    .case-info,.case:nth-child(even) .case-info{order:2}
+    .case-media,.case:nth-child(even) .case-media{order:1}
+  }
+  .case-info .c-idx{font-size:.78rem;color:var(--accent);letter-spacing:.14em;
+    margin-bottom:20px;display:flex;align-items:center;gap:14px;font-variant-numeric:tabular-nums}
+  .case-info .c-idx::after{content:"";flex:1;max-width:90px;height:1px;background:var(--line)}
+  .case-info h3{font-family:var(--serif);font-weight:400;font-size:clamp(2.8rem,6vw,6rem);
+    line-height:.92;letter-spacing:-.02em}
+  .case-info .c-cat{margin-top:14px;font-size:.82rem;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-2)}
+  .case-info .c-desc{margin-top:22px;max-width:42ch;color:var(--ink-1);font-size:clamp(1rem,1.5vw,1.18rem)}
+  .case-info .c-enter{margin-top:clamp(26px,3vw,38px);display:inline-flex;align-items:center;gap:12px;
+    font-size:.92rem;letter-spacing:.06em;padding-bottom:8px;border-bottom:1px solid var(--accent);transition:gap .4s var(--ease)}
+  .case-info .c-enter:hover{gap:22px}
+  .case-info .c-enter b{color:var(--accent);font-weight:400}
+
+  .case-media{position:relative;display:block;border-radius:16px;overflow:hidden;
+    border:1px solid var(--line);background:var(--bg-1);box-shadow:0 50px 100px -50px rgba(0,0,0,.95)}
+  .stage{position:relative;aspect-ratio:16/10.2;overflow:hidden;background:#07070D}
+  .stage iframe{position:absolute;top:0;left:0;width:143%;height:143%;
+    transform:scale(.7);transform-origin:top left;border:0;pointer-events:none;
+    opacity:0;transition:opacity 1s var(--ease)}
+  .stage iframe.ready{opacity:1}
+  .case-media:hover .stage iframe.ready{transform:scale(.735);transition:transform 1.8s var(--ease),opacity 1s}
+  .stage .load{position:absolute;inset:0;display:grid;place-items:center;z-index:2;
+    font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-2);
+    background:linear-gradient(100deg,#0c0c0f 30%,rgba(244,241,234,.05) 50%,#0c0c0f 70%);
+    background-size:200% 100%;animation:sh 1.6s infinite;transition:opacity .6s}
+  .stage .load.hide{opacity:0;pointer-events:none}
+  @keyframes sh{to{background-position:-200% 0}}
+  .stage .veil{position:absolute;inset:0;z-index:1;pointer-events:none;
+    box-shadow:inset 0 0 70px 6px rgba(7,7,10,.55)}
+  .chrome .live{margin-left:auto;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .chrome .live b{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--accent);margin-right:6px;animation:pl 2s infinite}
+  @keyframes pl{0%,100%{opacity:1}50%{opacity:.25}}
+  /* long email must fit the viewport */
+  .big-mail{font-size:clamp(1.5rem,5.4vw,4.4rem);word-break:break-word;max-width:100%}
+</style>
+</head>
+<body>
+
+<div id="loader" aria-hidden="true">
+  <div class="l-word">ANDRÉ</div>
+  <div class="l-num">000</div>
+</div>
+
+<canvas id="art" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">André Macouzet<span>®</span></a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">Studio</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta" data-hover>Let's build</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow rv">Founder &amp; builder · Data Scientist · Morelia, MX</span>
+      <h1 class="display">
+        <span class="ln"><span>I build things</span></span>
+        <span class="ln"><span>that <em>ship.</em></span></span>
+      </h1>
+      <div class="hero-foot">
+        <p class="rv">Founder and data scientist. I design and build the whole product — brand, interface, engineering — from the first line to launch. Everything below is real and running live inside this page. Hover. Enter.</p>
+        <div class="hero-cta rv">
+          <a href="#work" class="btn" data-hover>See the work</a>
+          <a href="#contact" class="btn btn-line" data-hover>Let's talk →</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">scroll</div>
+  </header>
+
+  <!-- MARQUEE -->
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>PARFECT</span><i>✦</i><span>ABONO</span><i>✦</i><span>NORTHPOINT</span><i>✦</i><span>PLINTH</span><i>✦</i><span>CAIRN</span><i>✦</i><span>HEARTS</span><i>✦</i><span>MONSTER KEBABS</span><i>✦</i>
+      <span>PARFECT</span><i>✦</i><span>ABONO</span><i>✦</i><span>NORTHPOINT</span><i>✦</i><span>PLINTH</span><i>✦</i><span>CAIRN</span><i>✦</i><span>HEARTS</span><i>✦</i><span>MONSTER KEBABS</span><i>✦</i>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <h2>Selected<br>work.</h2>
+        <span class="idx">7 projects · live</span>
+      </div>
+      <div class="cases" id="cases"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT / MANIFESTO -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <p class="statement">
+        <span class="rv-line"><span>I don't ship demos.</span></span>
+        <span class="rv-line"><span>I ship <em>the real thing.</em></span></span>
+        <span class="rv-line dim"><span>I design and build every product whole — brand, interface and engineering —</span></span>
+        <span class="rv-line dim"><span>obsessed with making it look premium and actually work.</span></span>
+      </p>
+      <p class="about-foot rv">From Morelia, solo and direct — no middlemen, from idea to a living product. Golf, agriculture, trading, retail, games and food: different worlds, the same bar.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <span class="eyebrow rv">Let's build something.</span>
+      <a href="mailto:andremacouzetruiz@gmail.com" class="big-mail rv" data-hover>andremacouzetruiz@gmail.com</a>
+      <div class="contact-row rv">
+        <span>End-to-end product</span>
+        <span>Morelia · remote · global</span>
+        <span>Reply within 24&nbsp;hours</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr"></span> André Macouzet</span>
+    <span>Built, not mocked.</span>
+  </div>
+</footer>
+
+<script>
+/* ---- project data ---- */
+const P = [
+  {name:"PARFECT",cat:"App · Golf analytics",url:"https://parfectapp.github.io/parfect/",host:"parfect.app",
+   desc:"Every shot, every green, every pattern. Golf analytics that turns your rounds into decisions — not nostalgia."},
+  {name:"ABONO",cat:"App · AgTech",url:"https://parfectapp.github.io/agrofin/",host:"abono.mx",
+   desc:"Total control of a greenhouse — costs, irrigation, yield and sales. And the only question that matters: did you make money?"},
+  {name:"NORTHPOINT",cat:"Platform · Trading",url:"https://parfectapp.github.io/northpoint/",host:"northpoint.trade",
+   desc:"A trading academy and journal in one: logbook, calendar, money-management and an AI coach that reads your trades."},
+  {name:"PLINTH",cat:"Retail · Edition objects",url:"https://parfectapp.github.io/plinth/plinth.html",host:"plinth.studio",
+   desc:"Sculptural sound objects in numbered editions. Bone, ink and amber — pieces you claim, not just buy."},
+  {name:"CAIRN",cat:"Brand · Mountain apparel",url:"https://parfectapp.github.io/cairn/",host:"cairn.wear",
+   desc:"Technical mountain apparel in counted editions. Faceless silhouettes, noble materials, your own number."},
+  {name:"HEARTS",cat:"Game · Battle royale",url:"https://parfectapp.github.io/hearts/",host:"hearts.gg",
+   desc:"An animal battle royale — predators vs. prey — with a marketplace, a wallet and a three-phase ranked ladder."},
+  {name:"MONSTER KEBABS",cat:"Brand · Dark kitchen",url:"https://parfectapp.github.io/monster-kebabs/landing.html",host:"monsterkebabs.mx",
+   desc:"A premium kebab dark kitchen in Morelia. Kaiju universe, KEBO the mascot, collectible stickers. Feed the monster."},
+];
+
+const cases = document.getElementById('cases');
+P.forEach((p,i)=>{
+  const art=document.createElement('article');
+  art.className="case rv";
+  art.innerHTML=`
+    <div class="case-info">
+      <div class="c-idx">${String(i+1).padStart(2,'0')} / 07 · Live</div>
+      <h3>${p.name.replace(/ /,'<br>')}</h3>
+      <div class="c-cat">${p.cat}</div>
+      <p class="c-desc">${p.desc}</p>
+      <a class="c-enter" href="${p.url}" target="_blank" rel="noopener" data-hover><b>Open project</b> ↗</a>
+    </div>
+    <a class="case-media" href="${p.url}" target="_blank" rel="noopener" data-hover aria-label="Abrir ${p.name}">
+      <div class="chrome">
+        <i></i><i></i><i></i>
+        <span class="url">${p.host}</span>
+        <span class="live"><b></b>En vivo</span>
+      </div>
+      <div class="stage">
+        <div class="load">Cargando ${p.name}…</div>
+        <iframe data-src="${p.url}" scrolling="no" title="${p.name}" tabindex="-1"></iframe>
+        <div class="veil"></div>
+      </div>
+    </a>`;
+  cases.appendChild(art);
+});
+
+/* lazy-load + fade the live previews */
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const f=e.target.querySelector('iframe');
+    const load=e.target.querySelector('.load');
+    f.src=f.dataset.src;
+    const reveal=()=>{f.classList.add('ready');load&&load.classList.add('hide')};
+    f.addEventListener('load',reveal);
+    setTimeout(reveal,4500);
+    io.unobserve(e.target);
+  });
+},{rootMargin:"600px 0px"});
+document.querySelectorAll('.case-media').forEach(s=>io.observe(s));
+</script>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="js/art.js"></script>
+<script src="js/app.js?v=5"></script>
+</body>
+</html>
