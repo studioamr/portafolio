@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#f3f6fa"/>
+  <g transform="translate(0 1)">
+    <path d="M32 3 L27.4 27.4 L32 32 Z" fill="#2f4d70"/><path d="M32 3 L36.6 27.4 L32 32 Z" fill="#557aa3"/>
+    <path d="M61 32 L36.6 27.4 L32 32 Z" fill="#2f4d70"/><path d="M61 32 L36.6 36.6 L32 32 Z" fill="#557aa3"/>
+    <path d="M32 61 L36.6 36.6 L32 32 Z" fill="#2f4d70"/><path d="M32 61 L27.4 36.6 L32 32 Z" fill="#557aa3"/>
+    <path d="M3 32 L27.4 36.6 L32 32 Z" fill="#2f4d70"/><path d="M3 32 L27.4 27.4 L32 32 Z" fill="#557aa3"/>
+    <path d="M41.2 22.8 L34.6 29.4 L32 32 Z" fill="#2f4d70"/><path d="M41.2 22.8 L29.4 34.6 L32 32 Z" fill="#557aa3"/>
+    <path d="M41.2 41.2 L34.6 34.6 L32 32 Z" fill="#2f4d70"/><path d="M41.2 41.2 L29.4 29.4 L32 32 Z" fill="#557aa3"/>
+    <path d="M22.8 41.2 L29.4 34.6 L32 32 Z" fill="#2f4d70"/><path d="M22.8 41.2 L34.6 29.4 L32 32 Z" fill="#557aa3"/>
+    <path d="M22.8 22.8 L29.4 29.4 L32 32 Z" fill="#2f4d70"/><path d="M22.8 22.8 L34.6 34.6 L32 32 Z" fill="#557aa3"/>
+    <circle cx="32" cy="32" r="2.6" fill="#1f3550"/>
+  </g>
+</svg>
