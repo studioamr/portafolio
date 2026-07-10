@@ -1,4 +1,4 @@
-/* ===== OBRA — generative flow field ===== */
+/* ===== OBRA — generative flow field (exagerado) ===== */
 (function () {
   const canvas = document.getElementById("art");
   const ctx = canvas.getContext("2d", { alpha: false });
@@ -6,7 +6,7 @@
   let W, H, DPR, particles = [], t = 0, raf, mx = 0.5, my = 0.5;
 
   const lowEnd = (navigator.hardwareConcurrency || 4) <= 4 || innerWidth < 760;
-  const COUNT = lowEnd ? 380 : 950;
+  const COUNT = lowEnd ? 650 : 1800;      // mucho más denso
 
   function resize() {
     DPR = Math.min(devicePixelRatio || 1, 2);
@@ -21,43 +21,45 @@
   addEventListener("resize", resize);
   addEventListener("pointermove", (e) => { mx = e.clientX / innerWidth; my = e.clientY / innerHeight; });
 
-  // cheap layered-sine flow field -> angle
+  // flujo de senos por capas -> ángulo. Remolinos más grandes y con más carácter.
   function flow(x, y, time) {
-    const s = 0.0016;
+    const s = 0.0011;                     // escala mayor = remolinos más amplios
     const a = Math.sin(x * s + time) * Math.cos(y * s * 1.3 - time * 0.8);
     const b = Math.cos(x * s * 0.7 - time * 0.6) * Math.sin(y * s + time * 0.4);
-    return (a + b) * Math.PI;
+    const c = Math.sin((x + y) * s * 0.5 + time * 1.2) * 0.6;   // tercera capa: turbulencia
+    return (a + b + c) * Math.PI;
   }
 
-  const PALETTE = ["#FF5B2E", "#F4F1EA", "#9D7CFF", "#3FD68C", "#F2A33C"];
+  const PALETTE = ["#FF5B2E", "#FF5B2E", "#F4F1EA", "#9D7CFF", "#3FD68C", "#F2A33C"];
 
   function seed(p) {
     p.x = Math.random() * W;
     p.y = Math.random() * H;
-    p.life = 40 + Math.random() * 160;
+    p.life = 60 + Math.random() * 220;    // vidas más largas = estelas más largas
     p.c = PALETTE[(Math.random() * PALETTE.length) | 0];
-    p.w = (Math.random() < 0.12 ? 1.4 : 0.55) * DPR;
+    p.w = (Math.random() < 0.18 ? 2.2 : 0.7) * DPR;   // más trazos gruesos
+    p.sp = 2.6 + Math.random() * 1.8;     // velocidad por partícula (más rápido)
   }
   for (let i = 0; i < COUNT; i++) { const p = {}; seed(p); particles.push(p); }
 
   function frame() {
-    t += 0.0016;
-    // soft fade for trails
-    ctx.fillStyle = "rgba(10,10,11,0.055)";
+    t += 0.0026;                          // el campo evoluciona más rápido
+    // fade más sutil -> estelas más largas y brillantes
+    ctx.fillStyle = "rgba(10,10,11,0.036)";
     ctx.fillRect(0, 0, W, H);
 
     const cx = mx * W, cy = my * H;
     for (const p of particles) {
       let ang = flow(p.x, p.y, t);
-      // gentle pull toward cursor for life
+      // el cursor arrastra el campo con más fuerza y alcance
       const dx = cx - p.x, dy = cy - p.y, d = Math.hypot(dx, dy) + 1;
-      if (d < 260 * DPR) ang += Math.atan2(dy, dx) * 0.12;
+      if (d < 360 * DPR) ang += Math.atan2(dy, dx) * 0.28;
 
-      const nx = p.x + Math.cos(ang) * 1.5 * DPR;
-      const ny = p.y + Math.sin(ang) * 1.5 * DPR;
+      const nx = p.x + Math.cos(ang) * p.sp * DPR;
+      const ny = p.y + Math.sin(ang) * p.sp * DPR;
 
       ctx.strokeStyle = p.c;
-      ctx.globalAlpha = 0.16;
+      ctx.globalAlpha = 0.26;             // más brillante
       ctx.lineWidth = p.w;
       ctx.beginPath();
       ctx.moveTo(p.x, p.y);
@@ -76,13 +78,13 @@
   document.addEventListener("visibilitychange", () => document.hidden ? stop() : start());
 
   if (reduce) {
-    // static single pass
-    for (let k = 0; k < 90; k++) frameStatic();
+    // pasada estática
+    for (let k = 0; k < 120; k++) frameStatic();
     function frameStatic() {
       for (const p of particles) {
         const ang = flow(p.x, p.y, t);
-        const nx = p.x + Math.cos(ang) * 2 * DPR, ny = p.y + Math.sin(ang) * 2 * DPR;
-        ctx.strokeStyle = p.c; ctx.globalAlpha = 0.12; ctx.lineWidth = p.w;
+        const nx = p.x + Math.cos(ang) * 2.4 * DPR, ny = p.y + Math.sin(ang) * 2.4 * DPR;
+        ctx.strokeStyle = p.c; ctx.globalAlpha = 0.18; ctx.lineWidth = p.w;
         ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(nx, ny); ctx.stroke();
         p.x = nx; p.y = ny;
       }
