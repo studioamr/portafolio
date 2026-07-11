@@ -182,33 +182,33 @@
 <script>
 /* ---- apps & platforms ---- */
 const APPS = [
-  {name:"PARFECT",cat:"App · Golf analytics",url:"https://parfectapp.github.io/parfect/",host:"parfect.app",
+  {name:"PARFECT",cat:"App · Golf analytics",url:"https://studioamr.github.io/parfect/",host:"parfect.app",
    desc:"Every shot, every green, every miss — captured and turned into a picture of your game. Parfect logs your rounds and surfaces the patterns a scorecard hides: where you leak strokes, which clubs to trust, what to practice next. Golf analytics that turns rounds into decisions, not nostalgia."},
-  {name:"ABONO",cat:"App · AgTech",url:"https://parfectapp.github.io/agrofin/",host:"abono.mx",
+  {name:"ABONO",cat:"App · AgTech",url:"https://studioamr.github.io/agrofin/",host:"abono.mx",
    preview:"phones.html?src=abono/index.html&views=home,cortes,gastos&bg=06130c&glow=104a26",
    desc:"The operating system for a working greenhouse. Costs, irrigation, labor, yield and sales in one place, with photos from the field and a Monday routine that keeps everyone honest — all answering the single question that matters: did you actually make money this cycle?"},
-  {name:"GOAL ACHIEVER",cat:"App · Goals & habits",url:"https://parfectapp.github.io/goal-achiever/",host:"goalachiever.app",
+  {name:"GOAL ACHIEVER",cat:"App · Goals & habits",url:"https://studioamr.github.io/goal-achiever/",host:"goalachiever.app",
    desc:"A personal OS for the life you say you want. Set goals, build habits and hold streaks — solo or in social races with friends, plus a shared family cloud so no one drifts. Multi-user, black and mono, zero noise: your day, in order."},
-  {name:"NORTHPOINT",cat:"Platform · Trading",url:"northpoint/index.html?v=51",host:"northpoint.trade",
+  {name:"NORTHPOINT",cat:"Platform · Trading",url:"https://studioamr.github.io/northpoint/",host:"northpoint.trade",
    desc:"A trading academy and journal fused into one platform: a structured zero-to-payout course, a disciplined logbook and calendar, money-management math, and an AI coach that reads your fills and tells you the truth about your edge — built to make discretionary traders accountable."},
 ];
 
 /* ---- e-commerce (stores) ---- */
 const ECOM = [
-  {name:"PLINTH",cat:"E-commerce · Edition objects",url:"https://parfectapp.github.io/plinth/plinth.html",host:"plinth.studio",
-   preview:"https://parfectapp.github.io/plinth/plinth.html#allinone",
+  {name:"PLINTH",cat:"E-commerce · Edition objects",url:"https://studioamr.github.io/plinth/plinth.html",host:"plinth.studio",
+   preview:"https://studioamr.github.io/plinth/plinth.html#allinone",
    desc:"A store for sculptural sound objects, released in numbered editions. Bone, ink and amber; each piece is claimed, not just bought. Full catalog, cart and checkout, presented with the restraint of a gallery rather than a shop."},
-  {name:"CAIRN",cat:"E-commerce · Mountain apparel",url:"cairn/index.html",host:"cairn.wear",
+  {name:"CAIRN",cat:"E-commerce · Mountain apparel",url:"https://studioamr.github.io/cairn/",host:"cairn.wear",
    desc:"Technical mountain apparel in counted editions. Faceless silhouettes, noble materials and a story of altitude — with a live cart and WhatsApp checkout so a drop can sell the moment it launches."},
-  {name:"AMR",cat:"E-commerce · Records",url:"https://parfectapp.github.io/amr/",host:"amr.studio",
-   preview:"https://parfectapp.github.io/amr/#vinyls",
+  {name:"AMR",cat:"E-commerce · Records",url:"https://studioamr.github.io/amr/",host:"amr.studio",
+   preview:"amr/index.html?preview=1",
    desc:"MONUMENTS — five original records, cut like monuments. A synth-driven artist project where the music was composed, synthesized and mastered, then sold as numbered masters on a site you play like a record instead of just scroll."},
 ];
 
 /* ---- branding ---- */
 const BRAND = [
-  {name:"MONSTER KEBABS",cat:"Branding · Dark kitchen",url:"https://parfectapp.github.io/monster-kebabs/",host:"monsterkebabs.mx",
-   img:"https://parfectapp.github.io/monster-kebabs/fotos/la-bestia.jpg",
+  {name:"MONSTER KEBABS",cat:"Branding · Dark kitchen",url:"https://studioamr.github.io/monster-kebabs/",host:"monsterkebabs.mx",
+   img:"https://studioamr.github.io/monster-kebabs/fotos/la-bestia.jpg",
    desc:"A full brand identity for a premium kebab dark kitchen in Morelia — a whole kaiju universe. KEBO the mascot, an eight-chapter brand bible, packaging, food photography and collectible stickers: an appetite you feed, not a logo you slap on. Feed the monster."},
 ];
 
@@ -216,7 +216,7 @@ const BRAND = [
 const GAMES = [
   {name:"UMBRAL",cat:"Game · Metroidvania",url:"umbral/index.html",host:"umbral.game",
    desc:"An original Hollow-Knight-style metroidvania set in a sunken kingdom beneath the mist. Hand-built combat, a connected map of twenty rooms across four zones, three boss fights and an original reactive score — a real game, playable right here in the page."},
-  {name:"HEARTS",cat:"Game · Battle royale",url:"https://parfectapp.github.io/hearts/landing.html",host:"hearts.gg",
+  {name:"HEARTS",cat:"Game · Battle royale",url:"https://studioamr.github.io/hearts/landing.html",host:"hearts.gg",
    desc:"An animal battle royale where predators hunt prey across shrinking arenas. A complete, live game with a marketplace, a wallet, clans and a three-phase ranked ladder — a Clash-Royale-scale build, not a mockup."},
 ];
 
@@ -284,17 +284,7 @@ function loadMedia(node){
   else if(f && !f.src){
     f.src=f.dataset.src;
     const rev=()=>{f.classList.add('ready');load&&load.classList.add('hide');};
-    f.addEventListener('load',()=>{
-      rev();
-      // AMR: cierra su intro y baja a los vinilos (mismo origen en producción)
-      if(/\/amr\//.test(f.dataset.src)){
-        try{
-          const d=f.contentDocument||f.contentWindow.document;
-          const skip=d.getElementById('skipBtn'); if(skip) skip.click();
-          setTimeout(()=>{ const v=d.getElementById('vinyls'); if(v) v.scrollIntoView(); }, 400);
-        }catch(e){/* cross-origin (local): se queda en el intro */}
-      }
-    });
+    f.addEventListener('load',rev);
     setTimeout(rev,4500);
   }
 }
