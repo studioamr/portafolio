@@ -12,7 +12,8 @@
 
   /* loader */
   const loader = $("#loader"), lnum = $(".l-num");
-  pixelCoder();                           // monito pixel-art programando
+  pixelCoder("l-pixel");                  // monito pixel-art en la intro
+  pixelCoder("a-pixel", true);            // …y en la sección about (continuo)
   const t0 = Date.now();
   let p = 0;
   const tick = setInterval(() => {
@@ -27,8 +28,8 @@
   setTimeout(() => { if (!document.body.classList.contains("ready")) { clearInterval(tick); done(); } }, 5000);
 
   /* ---- monito SD pixel programando en una compu ---- */
-  function pixelCoder() {
-    const c = document.getElementById("l-pixel"); if (!c) return;
+  function pixelCoder(id, persistent) {
+    const c = document.getElementById(id); if (!c) return;
     const g = c.getContext("2d"); g.imageSmoothingEnabled = false;
     const SKIN = "#e8b48b", HAIR = "#26242b", SHIRT = "#ff5b2e", SHIRTSH = "#c8431f",
       DESK = "#4a4038", DESKED = "#312a24", MON = "#1a1a22", MONLIP = "#2c2c36",
@@ -77,7 +78,7 @@
       const up = Math.floor(t / 7) % 2;
       px(26, 44, 5, 14, SHIRT); px(30, 56 + (up ? -1 : 0), 5, 3, SKIN);   // izq
       px(49, 44, 5, 14, SHIRT); px(48, 56 + (up ? 0 : -1), 5, 3, SKIN);   // der
-      if (!loader.classList.contains("done")) requestAnimationFrame(draw);
+      if (persistent || !loader.classList.contains("done")) requestAnimationFrame(draw);
     }
     draw();
   }
