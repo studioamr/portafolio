@@ -284,7 +284,16 @@ function loadMedia(node){
   else if(f && !f.src){
     f.src=f.dataset.src;
     const rev=()=>{f.classList.add('ready');load&&load.classList.add('hide');};
-    f.addEventListener('load',rev);
+    f.addEventListener('load',()=>{
+      rev();
+      // reubica el sello "Studio AMR" de las apps a abajo-derecha (mismo origen)
+      try{
+        const d=f.contentDocument;
+        if(d){ const st=d.createElement('style');
+          st.textContent='.studio-amr,.samr-bg{top:auto!important;left:auto!important;bottom:16px!important;right:18px!important}';
+          d.head.appendChild(st); }
+      }catch(e){}
+    });
     setTimeout(rev,4500);
   }
 }
