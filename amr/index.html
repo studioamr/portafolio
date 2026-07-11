@@ -1,0 +1,1007 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMR — Five records, cut like monuments</title>
+<meta name="description" content="AMR presses deep house in numbered vinyl editions. Five records. One sound: sub bass, dust and chords that answer late. Fifty records will ever exist.">
+<meta name="theme-color" content="#EAE6DF">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AMR">
+<meta property="og:title" content="AMR — MONUMENTS EP">
+<meta property="og:description" content="Five records cut like monuments. Numbered vinyl, editions of a few.">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="%23141210"/><circle cx="16" cy="16" r="5.5" fill="%23C96F2B"/><circle cx="16" cy="16" r="1.8" fill="%23EAE6DF"/></svg>'>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+:root{--bone:#EAE6DF;--bone2:#e0dad1;--ink:#141210;--amber:#C96F2B;--mut:#6E675E;--night:#16130f}
+*{box-sizing:border-box}
+html{scroll-padding-top:70px;scroll-behavior:smooth;overflow-x:hidden}
+body{margin:0;background:var(--bone);color:var(--ink);font-family:Archivo,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.serif{font-family:'Instrument Serif',serif;font-weight:400}
+.mono{font-family:'IBM Plex Mono',monospace}
+
+/* ---- intro: drop the needle ---- */
+body.lock{overflow:hidden}
+#intro{position:fixed;inset:0;z-index:60;background:var(--bone);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transition:opacity .9s,visibility .9s}
+#intro.out{opacity:0;visibility:hidden}
+#intro .iword{font-family:'Instrument Serif',serif;font-size:clamp(90px,24vw,300px);line-height:.85;letter-spacing:.04em}
+#intro .isub{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut)}
+#intro .isub b{color:var(--amber);font-weight:400}
+#intro .ibtn{margin-top:8px}
+#intro .iskip{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);background:none;border:none;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+#intro .iskip:hover{color:var(--amber)}
+
+/* ---- top ---- */
+.top{position:sticky;top:0;z-index:30;background:rgba(234,230,223,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(20,18,16,.12)}
+.top .in{max-width:1300px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:15px clamp(20px,4vw,48px)}
+.wm{font-family:'Instrument Serif',serif;font-size:24px;letter-spacing:.14em}
+.wm i{font-style:normal;color:var(--amber)}
+.top nav{display:flex;gap:28px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.top nav a:hover{color:var(--amber)}
+@media(max-width:720px){.top nav a:not(:last-child){display:none}}
+
+/* ---- hero ---- */
+.hero{position:relative;max-width:1300px;margin:0 auto;padding:clamp(24px,4vh,44px) clamp(20px,4vw,48px);min-height:min(72vh,640px);display:flex;flex-direction:column;justify-content:center}
+.hero-top{display:flex;justify-content:space-between;z-index:2;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-bottom:clamp(16px,3vh,38px)}
+.hero-top .a{color:var(--amber)}
+.hero-word{position:relative;z-index:2;font-family:'Instrument Serif',serif;font-size:clamp(110px,26vw,380px);line-height:.8;letter-spacing:.03em;margin:0}
+.hero-art{position:absolute;z-index:1;top:50%;right:clamp(14px,3vw,40px);transform:translateY(-50%);width:clamp(180px,29vw,390px);height:auto;pointer-events:none;opacity:.96}
+@media(max-width:720px){
+  .hero-top{flex-direction:column;align-items:flex-start;gap:5px;font-size:11px;margin-bottom:clamp(14px,3vh,26px)}
+  .hero-art{display:none}
+}
+/* ---- intro animado del hero ---- */
+.hero-word span{display:inline-block;will-change:transform,opacity,filter;transition:opacity .72s cubic-bezier(.2,.75,.2,1),transform .72s cubic-bezier(.2,.75,.2,1),filter .72s ease}
+.hero-top,.hero-bottom,.hero-art{transition:opacity .9s ease,transform .9s ease}
+body.lock .hero-word span{opacity:0;transform:translateY(.34em) rotate(3deg);filter:blur(8px)}
+body.lock .hero-top,body.lock .hero-bottom{opacity:0;transform:translateY(18px)}
+body.lock .hero-art{opacity:0;transform:translateY(-50%) scale(.86)}
+body.hero-in .hero-word span{opacity:1;transform:none;filter:none}
+body.hero-in .hero-word span:nth-child(1){transition-delay:.10s}
+body.hero-in .hero-word span:nth-child(2){transition-delay:.28s}
+body.hero-in .hero-word span:nth-child(3){transition-delay:.46s}
+body.hero-in .hero-top{opacity:1;transform:none;transition-delay:.04s}
+body.hero-in .hero-art{opacity:.96;transform:translateY(-50%) scale(1);transition-delay:.52s}
+body.hero-in .hero-bottom{opacity:1;transform:none;transition-delay:.66s}
+@media(prefers-reduced-motion:reduce){.hero-word span,.hero-top,.hero-bottom,.hero-art{opacity:1!important;filter:none!important}body.lock .hero-art,body.hero-in .hero-art{transform:translateY(-50%)!important}body.lock .hero-word span,body.hero-in .hero-word span{transform:none!important}}
+.hero-bottom{position:relative;z-index:5;display:flex;justify-content:space-between;align-items:flex-end;gap:30px;border-top:1px solid rgba(20,18,16,.18);margin-top:26px;padding:26px 0 44px;flex-wrap:wrap}
+.hero-claim{max-width:40ch;line-height:1.55;color:var(--mut);margin:0}
+.hero-claim b{color:var(--ink);font-weight:500}
+.btn{display:inline-flex;gap:10px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);padding:16px 28px;transition:.35s;white-space:nowrap;background:none;color:inherit;cursor:pointer}
+.btn:hover{background:var(--ink);color:var(--bone)}
+.btn.solid{background:var(--ink);color:var(--bone)}
+.btn.solid:hover{background:var(--amber);border-color:var(--amber);color:var(--night)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+/* vinilo girando protagónico */
+.herowax{position:absolute;top:34%;right:clamp(-40px,-1vw,20px);transform:translateY(-50%);width:clamp(250px,30vw,410px);aspect-ratio:1;border-radius:50%;z-index:3;cursor:pointer;border:none;padding:0;
+  background:repeating-radial-gradient(circle at 50% 50%,#141110 0 2px,#242019 2px 4.8px);
+  box-shadow:0 24px 70px rgba(20,18,16,.4),inset 0 0 80px rgba(0,0,0,.45);
+  display:grid;place-items:center;animation:spin 3.4s linear infinite;transition:transform .4s}
+.herowax:hover{transform:translateY(-50%) scale(1.02)}
+.herowax::after{content:"";position:absolute;width:36%;height:36%;border-radius:50%;
+  background:radial-gradient(circle at 42% 38%,#5B9BD5,#2E6FB0);box-shadow:0 0 0 5px #1a4a7a}
+.herowax::before{content:"";position:absolute;width:4.6%;height:4.6%;border-radius:50%;background:var(--bone);z-index:2}
+.herowax .sheen{position:absolute;inset:0;border-radius:50%;background:linear-gradient(118deg,rgba(255,255,255,.12),transparent 38%,transparent 62%,rgba(255,255,255,.06));animation:none}
+.herowax .lbltxt{position:absolute;z-index:1;font-family:'IBM Plex Mono',monospace;font-size:clamp(8px,1.1vw,12px);letter-spacing:.14em;color:var(--bone);text-align:center;line-height:1.7}
+.herowax .lbltxt b{font-family:'Instrument Serif',serif;font-size:clamp(17px,2.2vw,26px);letter-spacing:.04em;display:block;font-weight:400}
+.newchip{position:absolute;top:clamp(84px,12vh,130px);right:clamp(24px,4vw,60px);z-index:4;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;background:#2E6FB0;color:var(--bone);padding:8px 14px}
+@media(prefers-reduced-motion:reduce){.herowax{animation:none}}
+@media(max-width:820px){.herowax{opacity:.9;right:-16vw;width:64vw;top:34%}.newchip{top:70px}}
+
+/* ---- marquee ---- */
+.mq{border-top:1px solid rgba(20,18,16,.14);border-bottom:1px solid rgba(20,18,16,.14);overflow:hidden;white-space:nowrap}
+.mq div{display:inline-block;padding:16px 0;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;animation:mq 32s linear infinite}
+.mq span{padding:0 28px}.mq b{color:var(--amber);font-weight:400}
+.mq.blue{border-color:rgba(46,111,176,.30)}.mq.blue b{color:#2E6FB0}.mq.blue div{animation-direction:reverse}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---- sections ---- */
+.sec{max-width:1300px;margin:0 auto;padding:clamp(60px,9vw,120px) clamp(20px,4vw,48px)}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:44px}
+.hk{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase}
+.sh h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(38px,5.5vw,72px);margin:10px 0 0}
+.sh p{color:var(--mut);max-width:38ch;margin:0;font-size:15px;line-height:1.6}
+
+/* ---- records grid ---- */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:rgba(20,18,16,.14);border:1px solid rgba(20,18,16,.14)}
+.card{background:var(--bone);color:var(--ink);padding:26px;position:relative;transition:background .45s;cursor:pointer;text-align:left;border:none;font-family:inherit;display:block;width:100%;overflow:hidden}
+.card:hover{background:var(--bone2)}
+.card .num{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:var(--mut);display:flex;justify-content:space-between}
+.card .num b{color:var(--amber);font-weight:400}
+.sleeve{position:relative;aspect-ratio:1;margin:16px 0 18px}
+.vinyl{position:absolute;inset:4% 4% 4% auto;aspect-ratio:1;height:92%;border-radius:50%;background:repeating-radial-gradient(circle at 50% 50%,#171412 0 1.6px,#221e1a 1.6px 3.4px);transition:transform .7s cubic-bezier(.22,.8,.3,1);display:grid;place-items:center;box-shadow:0 2px 14px rgba(20,18,16,.25)}
+.vinyl::after{content:"";position:absolute;width:34%;height:34%;border-radius:50%;background:var(--amber)}
+.vinyl::before{content:"";position:absolute;width:7%;height:7%;border-radius:50%;background:var(--bone);z-index:2}
+.vinyl .lbl{position:absolute;z-index:1;width:34%;height:34%;border-radius:50%;display:grid;place-items:center;font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:.08em;color:var(--night);text-align:center;line-height:1.6}
+.card.playing .vinyl,.card:hover .vinyl{transform:translateX(34%)}
+.card.playing .vinyl{animation:spin 1.9s linear infinite}
+@keyframes spin{to{rotate:360deg}}
+.cover{position:relative;z-index:2;width:100%;height:100%;background:var(--bone2);border:1px solid rgba(20,18,16,.1);display:grid;place-items:center;transition:transform .5s}
+.card:hover .cover,.card.playing .cover{transform:translateX(-7%)}
+.cover img{width:86%;height:86%;object-fit:contain}
+.pchip{position:absolute;z-index:3;left:12px;bottom:12px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;background:var(--bone);border:1px solid var(--ink);padding:6px 10px;opacity:0;transition:.3s}
+.card:hover .pchip,.card.playing .pchip{opacity:1}
+.card.playing .pchip{background:var(--ink);color:var(--bone)}
+.card h3{font-family:'Instrument Serif',serif;font-weight:400;font-size:36px;margin:0 0 10px;line-height:1}
+.card .desc{color:var(--mut);font-size:14px;line-height:1.55;margin:0 0 16px;min-height:3.2em}
+.card .row{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);border-top:1px solid rgba(20,18,16,.12);padding-top:14px}
+.card .row b{color:var(--ink);font-weight:400}
+.card::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--amber);transition:width .5s}
+.card:hover::after,.card.playing::after{width:100%}
+
+/* ---- the sound (editorial) ---- */
+.edit{background:var(--bone2)}
+.edit .row2{max-width:1300px;margin:0 auto;padding:clamp(60px,9vw,120px) clamp(20px,4vw,48px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:center}
+.edit h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(34px,4.5vw,60px);margin:14px 0 20px}
+.edit p{color:var(--mut);line-height:1.7;max-width:46ch}
+.edit p b{color:var(--ink);font-weight:500}
+.speclist{margin:26px 0 0;padding:0;list-style:none;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.speclist li{display:flex;gap:16px;padding:11px 0;border-top:1px solid rgba(20,18,16,.14);color:var(--mut)}
+.speclist li:last-child{border-bottom:1px solid rgba(20,18,16,.14)}
+.speclist b{color:var(--amber);font-weight:400;min-width:110px}
+.speclist i{font-style:normal;color:var(--ink)}
+.bigdisc{position:relative;aspect-ratio:1;border-radius:50%;background:repeating-radial-gradient(circle at 50% 50%,#171412 0 2px,#232019 2px 4.4px);display:grid;place-items:center;box-shadow:0 10px 40px rgba(20,18,16,.3)}
+.bigdisc::after{content:"";width:33%;height:33%;border-radius:50%;background:var(--amber)}
+.bigdisc::before{content:"";position:absolute;width:5.5%;height:5.5%;border-radius:50%;background:var(--bone2);z-index:2}
+.bigdisc.spin{animation:spin 3.5s linear infinite}
+.bigdisc.blue::after{background:#2E6FB0}
+.soundrail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;-webkit-overflow-scrolling:touch}
+.soundrail::-webkit-scrollbar{display:none}
+.soundrail.dragging{cursor:grabbing;scroll-snap-type:none}
+.soundpanel{flex:0 0 100%;scroll-snap-align:center}
+.soundpanel .row2{padding-bottom:clamp(28px,4vw,50px)}
+.sounddots{display:flex;gap:10px;justify-content:center;padding-bottom:clamp(40px,6vw,72px)}
+.sounddots button{width:9px;height:9px;border-radius:50%;border:1px solid var(--mut);background:none;cursor:pointer;padding:0;transition:.3s}
+.sounddots button.on{background:var(--ink);border-color:var(--ink)}
+@media(max-width:860px){.edit .row2{grid-template-columns:1fr}}
+
+/* ---- about ---- */
+.about{text-align:center}
+.about .lede{font-family:'Instrument Serif',serif;font-size:clamp(26px,3.6vw,44px);line-height:1.25;max-width:26ch;margin:0 auto 24px}
+.about .lede i{color:var(--amber);font-style:normal}
+.about p{color:var(--mut);max-width:60ch;margin:0 auto;line-height:1.7}
+
+/* ---- cta ---- */
+.cta{background:var(--bone);text-align:center;position:relative;overflow:hidden;border-top:1px solid rgba(20,18,16,.16)}
+.cta .in{position:relative;z-index:2;max-width:1000px;margin:0 auto;padding:clamp(90px,13vw,170px) clamp(20px,4vw,48px)}
+.cta h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(46px,8.5vw,120px);line-height:.98;margin:18px 0 28px}
+.cta h2 i{font-style:normal;color:var(--amber)}
+.cta-rule{display:flex;align-items:center;justify-content:center;gap:22px;margin:0 0 34px}
+.cta-rule span{height:1px;width:clamp(40px,10vw,96px);background:rgba(20,18,16,.28)}
+.cta .price{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin:0}
+.cta p.sub{color:var(--mut);max-width:52ch;margin:0 auto 40px;line-height:1.65}
+.cta-fine{margin:30px 0 0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+
+/* ---- footer ---- */
+footer{border-top:1px solid rgba(20,18,16,.14)}
+footer .in{max-width:1300px;margin:0 auto;padding:34px clamp(20px,4vw,48px);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+footer b{color:var(--amber);font-weight:400}
+
+/* ---- player bar ---- */
+#player{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(20,18,16,.97);color:var(--bone);transform:translateY(110%);transition:transform .5s cubic-bezier(.22,.8,.3,1)}
+#player.on{transform:translateY(0)}
+#player .in{max-width:1300px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:12px clamp(16px,3vw,40px)}
+#player .mdisc{width:42px;height:42px;border-radius:50%;flex:none;background:repeating-radial-gradient(circle at 50% 50%,#2a2521 0 1.2px,#3a332c 1.2px 2.6px);position:relative;display:grid;place-items:center}
+#player .mdisc::after{content:"";width:36%;height:36%;border-radius:50%;background:var(--amber)}
+#player.playing .mdisc{animation:spin 1.9s linear infinite}
+#player .meta{min-width:0;flex:0 0 auto;width:200px}
+#player .meta .t1{font-family:'Instrument Serif',serif;font-size:19px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#player .meta .t2{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;color:rgba(234,230,223,.55);text-transform:uppercase;margin-top:3px}
+#player .meta .t2 b{color:var(--amber);font-weight:400}
+#wave{flex:1;height:44px;cursor:pointer;min-width:60px}
+#player .time{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:rgba(234,230,223,.6);flex:none;width:96px;text-align:right}
+#player .ctl{display:flex;gap:8px;flex:none}
+#player .ctl button{background:none;border:1px solid rgba(234,230,223,.3);color:var(--bone);width:38px;height:38px;display:grid;place-items:center;cursor:pointer;transition:.3s;font-size:12px}
+#player .ctl button:hover{border-color:var(--amber);color:var(--amber)}
+#player .ctl button.play{background:var(--bone);color:var(--night);border-color:var(--bone)}
+#player .ctl button.play:hover{background:var(--amber);border-color:var(--amber);color:var(--night)}
+@media(max-width:760px){#player .meta{width:120px}#player .time{display:none}}
+body.hasplayer{padding-bottom:70px}
+
+/* ---- THE SET (branding nocturno) ---- */
+.setwrap{background:var(--bone2);color:var(--ink);border-top:1px solid rgba(166,45,62,.3);border-bottom:1px solid rgba(20,18,16,.12);position:relative;overflow:hidden}
+.setwrap::before{content:"";position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:900px;height:600px;background:radial-gradient(ellipse,rgba(166,45,62,.13),transparent 70%);pointer-events:none}
+.setin{position:relative;z-index:2;max-width:1300px;margin:0 auto;padding:clamp(60px,9vw,120px) clamp(20px,4vw,48px);display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:clamp(30px,5vw,72px);align-items:center}
+.setcover{position:relative;aspect-ratio:1;border:1px solid rgba(20,18,16,.12);background:var(--bone)}
+.setcover img{width:100%;height:100%;object-fit:cover;display:block}
+.setcover .spin{position:absolute;right:-38px;top:50%;transform:translateY(-50%);width:64%;aspect-ratio:1;border-radius:50%;background:repeating-radial-gradient(circle at 50% 50%,#171412 0 1.6px,#241f19 1.6px 3.6px);box-shadow:0 10px 40px rgba(20,18,16,.3);z-index:-1;opacity:0;transition:opacity .5s,transform .5s}
+.setwrap.playing .setcover .spin{opacity:1;animation:spin 2.4s linear infinite}
+.sethk{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.24em;color:var(--amber);text-transform:uppercase}
+.setwrap h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(56px,9vw,128px);line-height:.9;margin:14px 0 0}
+.setsub{color:var(--mut);line-height:1.6;max-width:52ch;margin:18px 0 0}
+.setsub b{color:var(--ink);font-weight:500}
+.setstats{display:flex;gap:26px;flex-wrap:wrap;margin:26px 0 8px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.setstats b{color:var(--amber);font-weight:400}
+.setwave{width:100%;height:56px;margin:20px 0 4px;cursor:pointer}
+.setact{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.setplay{display:inline-flex;gap:12px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);background:var(--ink);color:var(--bone);padding:16px 30px;cursor:pointer;transition:.35s}
+.setplay:hover{background:var(--amber);border-color:var(--amber);color:var(--bone)}
+.setbuy{display:inline-flex;gap:10px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);color:var(--ink);padding:16px 28px;cursor:pointer;background:none;transition:.35s}
+.setbuy:hover{border-color:var(--amber);color:var(--amber)}
+.setbuy b{color:var(--amber);font-weight:400}
+.settracks{margin:30px 0 0;border-top:1px solid rgba(20,18,16,.14);columns:2;column-gap:40px}
+@media(max-width:640px){.settracks{columns:1}}
+.settracks .tk{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid rgba(20,18,16,.08);font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.04em;color:var(--mut);break-inside:avoid}
+.settracks .tk b{color:var(--amber);font-weight:400;min-width:26px}
+.settracks .tk.on{color:var(--ink)}
+@media(max-width:860px){.setin{grid-template-columns:1fr}.setcover{max-width:360px}}
+
+/* ---- los dos vinilos ---- */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(36px,5vw,64px);margin-top:6px}
+.vprod{display:flex;flex-direction:column;align-items:center;text-align:center}
+.vdiscwrap{position:relative;width:min(430px,86%);aspect-ratio:1}
+.vdisc{position:absolute;inset:0;border-radius:50%;border:none;cursor:pointer;padding:0;
+  background:repeating-radial-gradient(circle at 50% 50%,#141110 0 2px,#242019 2px 4.8px);
+  box-shadow:0 22px 60px rgba(20,18,16,.35),inset 0 0 70px rgba(0,0,0,.4);display:grid;place-items:center;transition:transform .4s}
+.vdiscwrap:hover .vdisc{transform:scale(1.02)}
+.vdisc::before{content:"";position:absolute;width:74%;height:74%;border-radius:50%;border:1px solid rgba(201,111,43,.4)}
+.vlabel{position:absolute;width:43%;height:43%;border-radius:50%;display:grid;place-content:center;text-align:center;
+  background:radial-gradient(circle at 42% 38%,#e0954f,var(--amber));box-shadow:0 0 0 5px #8a4a1a;color:var(--bone)}
+.vlabel b{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(20px,3vw,30px);line-height:.95}
+.vlabel i{font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:9px;letter-spacing:.16em;opacity:.85;margin-top:6px}
+.vhole{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:4.4%;height:4.4%;border-radius:50%;background:var(--bone);z-index:3}
+.vgo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:66px;height:66px;border-radius:50%;z-index:5;
+  background:rgba(20,18,16,.8);color:var(--bone);display:grid;place-items:center;font-size:20px;opacity:0;transition:opacity .3s,background .3s;pointer-events:none}
+.vdiscwrap:hover .vgo{opacity:1}
+.vdisc.spinning{animation:spin 2.6s linear infinite}
+.vprod .vgo.on,.vdiscwrap:has(.spinning) .vgo{opacity:1;background:var(--amber)}
+.vmeta{margin-top:28px;width:100%}
+.vkick{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--amber);text-transform:uppercase}
+.vprod h3{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(42px,6vw,72px);margin:8px 0 14px;line-height:.95}
+.vstats{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.vstats b{color:var(--ink);font-weight:500}
+.vact{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:24px 0 0}
+.vplay{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);background:var(--ink);color:var(--bone);padding:15px 26px;cursor:pointer;transition:.35s}
+.vplay:hover{background:var(--amber);border-color:var(--amber)}
+.vbuy{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);background:none;color:var(--ink);padding:15px 24px;cursor:pointer;transition:.35s}
+.vbuy:hover{border-color:var(--amber);color:var(--amber)}
+.vbuy b{color:var(--amber);font-weight:400}
+.vinfo{margin:22px auto 0;max-width:380px;text-align:left}
+.vinfo-lbl{display:block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);padding:11px 0;border-top:1px solid rgba(20,18,16,.14)}
+.vinfo-lbl b{color:var(--amber);font-weight:400}
+.vtracks{margin:6px 0 4px;padding:0;list-style:none;columns:2;column-gap:26px}
+.vtracks li{display:flex;gap:10px;padding:6px 0;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--mut);break-inside:avoid;cursor:pointer;transition:color .2s}
+.vtracks li b{color:var(--amber);font-weight:400;min-width:24px}
+.vtracks li:hover{color:var(--ink)}
+.vtracks li.on{color:var(--ink)}
+.vtracks li.on b::after{content:" ▸"}
+@media(max-width:520px){.vtracks{columns:1}}
+/* MONUMENTS en naranja (SESIÓN 001 queda en vino) */
+/* SESIÓN 001 en rojo vino (todo lo demás queda naranja) */
+.vprod.wine .vlabel{background:radial-gradient(circle at 42% 38%,#C24C5C,#A62D3E);box-shadow:0 0 0 5px #7d1f2e}
+.vprod.wine .vdisc::before{border-color:rgba(166,45,62,.45)}
+.vprod.wine .vgo.on{background:#A62D3E}
+.vprod.wine .vkick,.vprod.wine .vstats b,.vprod.wine .vbuy b,.vprod.wine .vinfo-lbl b,.vprod.wine .vtracks li b{color:#A62D3E}
+.vprod.wine .vplay:hover{background:#A62D3E;border-color:#A62D3E}
+.vprod.wine .vbuy:hover{border-color:#A62D3E;color:#A62D3E}
+/* ---- carril horizontal libre: deriva sola, arrastrable ---- */
+.dropsrail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;-webkit-overflow-scrolling:touch}
+.dropsrail::-webkit-scrollbar{display:none}
+.dropsrail.dragging{cursor:grabbing;scroll-snap-type:none}
+.hpanel{flex:0 0 100%;scroll-snap-align:center;display:flex;align-items:center;min-height:min(760px,84vh)}
+.hpanel .nrin{padding-top:clamp(30px,5vh,60px);padding-bottom:clamp(30px,5vh,60px);width:100%}
+@media(max-width:860px){
+  .dropsrail{display:block;overflow:visible;cursor:auto}
+  .hpanel{display:block;min-height:0}
+}
+
+/* ---- NUEVO LANZAMIENTO — noche azul, vivo ---- */
+.nr{position:relative;background:#0b1524;color:var(--bone);overflow:hidden;border-top:1px solid rgba(46,111,176,.35);border-bottom:1px solid rgba(20,18,16,.12)}
+.nr::before{content:"";position:absolute;top:-45%;right:-12%;width:min(950px,90vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(46,111,176,.45),transparent 65%);animation:nrpulse 6s ease-in-out infinite;pointer-events:none}
+.nr::after{content:"";position:absolute;bottom:-55%;left:-18%;width:min(850px,80vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(91,155,213,.2),transparent 65%);animation:nrpulse 8s ease-in-out infinite reverse;pointer-events:none}
+@keyframes nrpulse{0%,100%{opacity:.65;transform:scale(1)}50%{opacity:1;transform:scale(1.07)}}
+.nrin{position:relative;z-index:2;max-width:1300px;margin:0 auto;padding:clamp(70px,10vw,130px) clamp(20px,4vw,48px);display:grid;grid-template-columns:1.15fr minmax(280px,460px);gap:clamp(34px,6vw,90px);align-items:center}
+.nrlive{display:inline-flex;align-items:center;gap:11px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.24em;color:#5B9BD5;text-transform:uppercase}
+.nrlive i{width:9px;height:9px;border-radius:50%;background:#5B9BD5;animation:livedot 1.7s ease-in-out infinite}
+@keyframes livedot{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(91,155,213,.55)}50%{opacity:.65;box-shadow:0 0 0 10px rgba(91,155,213,0)}}
+.nrtitle{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(80px,13vw,190px);line-height:.85;margin:18px 0 14px;letter-spacing:.02em;text-shadow:0 0 70px rgba(46,111,176,.55)}
+.nrsub{color:rgba(234,230,223,.62);max-width:56ch;line-height:1.7;margin:0 0 8px}
+.nrsub b{color:var(--bone);font-weight:500}
+.nr .vstats{display:flex;gap:24px;flex-wrap:wrap;margin:22px 0 0;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(234,230,223,.5)}
+.nr .vstats b{color:#5B9BD5;font-weight:400}
+.nr .vact{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 0}
+.nr .vplay{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--bone);background:var(--bone);color:#0b1524;padding:16px 28px;cursor:pointer;transition:.35s}
+.nr .vplay:hover{background:#5B9BD5;border-color:#5B9BD5;color:#0b1524}
+.nr .vbuy{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(234,230,223,.45);background:none;color:var(--bone);padding:16px 26px;cursor:pointer;transition:.35s}
+.nr .vbuy:hover{border-color:#5B9BD5;color:#5B9BD5}
+.nr .vbuy b{color:#5B9BD5;font-weight:400}
+.nr .vinfo{margin:28px 0 0;max-width:460px}
+.nr .vinfo-lbl{display:block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(234,230,223,.5);padding:11px 0;border-top:1px solid rgba(234,230,223,.14)}
+.nr .vinfo-lbl b{color:#5B9BD5;font-weight:400}
+.nr .vtracks{margin:4px 0 0;padding:0;list-style:none;columns:2;column-gap:30px}
+.nr .vtracks li{display:flex;gap:10px;padding:6px 0;font-family:'IBM Plex Mono',monospace;font-size:12px;color:rgba(234,230,223,.55);break-inside:avoid;cursor:pointer;transition:color .2s}
+.nr .vtracks li b{color:#5B9BD5;font-weight:400;min-width:24px}
+.nr .vtracks li:hover{color:var(--bone)}
+.nr .vtracks li.on{color:var(--bone)}
+.nr .vtracks li.on b::after{content:" ▸"}
+.nrdisc{position:relative;aspect-ratio:1;width:100%;max-width:460px;justify-self:end}
+.nrrings{position:absolute;inset:-14%;pointer-events:none}
+.nrrings span{position:absolute;inset:0;border:1px solid rgba(91,155,213,.4);border-radius:50%;animation:nrring 3.6s linear infinite}
+.nrrings span:nth-child(2){animation-delay:1.2s}
+.nrrings span:nth-child(3){animation-delay:2.4s}
+@keyframes nrring{0%{transform:scale(.84);opacity:0}16%{opacity:.65}100%{transform:scale(1.24);opacity:0}}
+.nr .vdiscwrap{position:relative;width:100%;aspect-ratio:1}
+.nr .vlabel{background:radial-gradient(circle at 42% 38%,#5B9BD5,#2E6FB0);box-shadow:0 0 0 5px #1a4a7a}
+.nr .vdisc{box-shadow:0 26px 90px rgba(0,0,0,.6),0 0 90px rgba(46,111,176,.35),inset 0 0 70px rgba(0,0,0,.4)}
+.nr .vdisc::before{border-color:rgba(91,155,213,.4)}
+.nr .vgo.on{background:#2E6FB0}
+@media(max-width:860px){.nrin{grid-template-columns:1fr}.nrdisc{max-width:330px;justify-self:center;order:-1}}
+@media(prefers-reduced-motion:reduce){.nr::before,.nr::after,.nrrings span,.nrlive i{animation:none}}
+/* variante ámbar (MONUMENTS): disco a la izquierda, texto a la derecha */
+.nr.amber{background:#201205;border-top-color:rgba(201,111,43,.4)}
+.nr.amber::before{background:radial-gradient(circle,rgba(201,111,43,.42),transparent 65%);right:auto;left:-12%}
+.nr.amber::after{background:radial-gradient(circle,rgba(224,149,79,.18),transparent 65%);left:auto;right:-18%}
+.nr.amber .nrin{grid-template-columns:minmax(280px,460px) 1.15fr}
+.nr.amber .nrdisc{justify-self:start}
+.nr.amber .nrlive{color:#e0954f}
+.nr.amber .nrlive i{background:#e0954f;animation-name:livedotA}
+@keyframes livedotA{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(224,149,79,.55)}50%{opacity:.65;box-shadow:0 0 0 10px rgba(224,149,79,0)}}
+.nr.amber .nrtitle{text-shadow:0 0 70px rgba(201,111,43,.55);font-size:clamp(56px,9.5vw,140px)}
+.nr.amber .vstats b,.nr.amber .vbuy b,.nr.amber .vinfo-lbl b,.nr.amber .vtracks li b{color:#e0954f}
+.nr.amber .vplay{color:#201205}
+.nr.amber .vplay:hover{background:#e0954f;border-color:#e0954f;color:#201205}
+.nr.amber .vbuy:hover{border-color:#e0954f;color:#e0954f}
+.nr.amber .vtracks li.on,.nr.amber .vtracks li:hover{color:var(--bone)}
+.nr.amber .nrrings span{border-color:rgba(224,149,79,.4)}
+.nr.amber .vlabel{background:radial-gradient(circle at 42% 38%,#e0954f,#C96F2B);box-shadow:0 0 0 5px #8a4a1a}
+.nr.amber .vdisc{box-shadow:0 26px 90px rgba(0,0,0,.6),0 0 90px rgba(201,111,43,.3),inset 0 0 70px rgba(0,0,0,.4)}
+.nr.amber .vdisc::before{border-color:rgba(224,149,79,.4)}
+.nr.amber .vgo.on{background:#C96F2B}
+@media(max-width:860px){.nr.amber .nrin{grid-template-columns:1fr}.nr.amber .nrdisc{justify-self:center}}
+/* cards azules (cortes de TULUM en LO MEJOR) */
+.card.bluecard .num b{color:#2E6FB0}
+.card.bluecard .vinyl::after{background:#2E6FB0}
+.card.bluecard::after{background:#2E6FB0}
+.card.bluecard .pchip{border-color:#2E6FB0;color:#2E6FB0}
+.card.bluecard.playing .pchip{background:#2E6FB0;color:var(--bone)}
+/* MINIMAL SET en azul */
+.vprod.blue .vlabel{background:radial-gradient(circle at 42% 38%,#5B9BD5,#2E6FB0);box-shadow:0 0 0 5px #1a4a7a}
+.vprod.blue .vdisc::before{border-color:rgba(46,111,176,.45)}
+.vprod.blue .vgo.on{background:#2E6FB0}
+.vprod.blue .vkick,.vprod.blue .vstats b,.vprod.blue .vbuy b,.vprod.blue .vinfo-lbl b,.vprod.blue .vtracks li b{color:#2E6FB0}
+.vprod.blue .vplay:hover{background:#2E6FB0;border-color:#2E6FB0}
+.vprod.blue .vbuy:hover{border-color:#2E6FB0;color:#2E6FB0}
+
+/* ---- shotbox (galería de producto) ---- */
+.shotbox{position:fixed;inset:0;z-index:80;background:rgba(11,9,6,.74);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.shotbox.on{opacity:1;visibility:visible}
+.shot-in{background:var(--bone);max-width:1080px;width:100%;max-height:92vh;overflow:auto;display:grid;grid-template-columns:1.4fr 1fr;position:relative;box-shadow:0 40px 120px rgba(0,0,0,.5)}
+.shot-imgwrap{background:#EAE4DA}
+.shot-img{width:100%;height:100%;object-fit:cover;display:block;min-height:280px}
+.shot-meta{padding:clamp(24px,3vw,46px);display:flex;flex-direction:column;justify-content:center;gap:14px}
+.shot-meta h3{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(36px,5vw,62px);margin:0;line-height:.92}
+.shot-meta p{color:var(--mut);line-height:1.55;margin:0;max-width:38ch}
+.shot-list{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:0}
+.shot-list li{display:flex;justify-content:space-between;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:9px 0;border-top:1px solid rgba(20,18,16,.13)}
+.shot-list b{color:var(--ink);font-weight:400}.shot-list i{font-style:normal;color:var(--mut)}
+.shot-cta{margin-top:12px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.shot-note{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
+.shot-x{position:absolute;top:14px;right:14px;z-index:3;background:var(--bone);border:1px solid var(--ink);width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:13px;display:grid;place-items:center;transition:.3s}
+.shot-x:hover{background:var(--ink);color:var(--bone)}
+@media(max-width:760px){.shot-in{grid-template-columns:1fr;max-height:94vh}}
+/* ---- events / tocadas ---- */
+.events .sh{margin-bottom:6px}
+.evlist{list-style:none;margin:30px 0 0;padding:0;border-top:1px solid rgba(20,18,16,.16)}
+.ev{display:grid;grid-template-columns:118px 1fr auto auto;gap:26px;align-items:center;padding:22px 8px;border-bottom:1px solid rgba(20,18,16,.14);transition:background .3s}
+.ev:hover{background:rgba(20,18,16,.035)}
+.ev-date{font-family:'IBM Plex Mono',monospace;line-height:1.05}
+.ev-date b{display:block;font-size:19px;letter-spacing:.03em;color:var(--ink)}
+.ev-date i{font-style:normal;font-size:11px;letter-spacing:.2em;color:var(--mut)}
+.ev-main b{font-family:'Instrument Serif',serif;font-size:clamp(21px,3vw,32px);font-weight:400;display:block;line-height:1.05}
+.ev-main span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+.ev-note{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);white-space:nowrap}
+.ev-cta{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);padding:11px 20px;color:var(--ink);background:none;cursor:pointer;transition:.3s;white-space:nowrap}
+.ev-cta:hover{background:var(--ink);color:var(--bone)}
+.ev.soldout{opacity:.48}
+.ev.soldout .ev-cta{border-color:var(--mut);color:var(--mut);pointer-events:none}
+@media(max-width:720px){.ev{grid-template-columns:74px 1fr;gap:8px 16px;padding:18px 4px}.ev-note{grid-column:2;order:3}.ev-cta{grid-column:1/-1;order:4;justify-self:start;margin-top:4px}}
+/* ---- reveal ---- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none}.mq div{animation:none}}
+</style></head><body class="lock">
+
+<!-- INTRO -->
+<div id="intro">
+  <div class="isub">MONUMENTS — FIVE RECORDS <b>·</b> MMXXVI</div>
+  <div class="iword">AMR</div>
+  <button class="btn solid ibtn" id="dropBtn">Drop the needle ↓</button>
+  <button class="iskip" id="skipBtn">just browse</button>
+</div>
+
+<!-- TOP -->
+<header class="top"><div class="in">
+  <a href="#" class="wm">STUDIO AMR<i>.</i></a>
+  <nav>
+    <a href="#records">Records</a>
+    <a href="#sound">The sound</a>
+    <a href="#about">About</a>
+    <a href="#own">Own one</a>
+  </nav>
+</div></header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-top"><span>MORELIA, MX</span><span class="a">THREE RECORDS · ONE STUDIO</span><span>EST. MMXXVI</span></div>
+  <img class="hero-art" src="art/amr-hero.svg" alt="" aria-hidden="true">
+  <h1 class="hero-word"><span>A</span><span>M</span><span>R</span></h1>
+  <div class="hero-bottom">
+    <p class="hero-claim"><b>Streaming forgets. Vinyl doesn't.</b> AMR presses its music to coloured records in short, hand-numbered runs. When a run sells out, the plate is retired — no repress, ever.</p>
+    <div class="hero-cta">
+      <a class="btn solid" href="#newrelease">▸ New release — TULUM</a>
+      <a class="btn" href="#vinyls">Get the vinyl</a>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq"><div id="mqtrack"></div></div>
+
+<!-- EVENTS — próximas tocadas (entre hero y TULUM) -->
+<section class="sec events" id="events">
+  <div class="sh">
+    <div><span class="hk">LIVE — ON TOUR</span><h2>Upcoming shows.</h2></div>
+    <p>Where the records get played out loud. Studio AMR live — long-form, in sync, one take.</p>
+  </div>
+  <ul class="evlist" id="evlist"></ul>
+</section>
+
+<!-- LOS DOS DROPS — carril horizontal libre (deriva sola, arrastrable) -->
+<div class="dropsrail" id="dropsrail">
+<!-- NUEVO LANZAMIENTO — TULUM (noche azul) -->
+<section class="nr hpanel" id="newrelease">
+  <div class="nrin">
+    <div class="nrleft">
+      <span class="nrlive"><i></i>OUT NOW — NEW RELEASE</span>
+      <h2 class="nrtitle">TULUM</h2>
+      <p class="nrsub">The record the whole season waited for. One continuous set — <b>1h51</b>, sixteen tracks in a single take, tempo-locked transitions, <b>in sync</b> from the first bar to the last. Cut to blue vinyl, numbered by hand.</p>
+      <div id="nrMeta"></div>
+    </div>
+    <div class="nrdisc" id="nrDisc"></div>
+  </div>
+</section>
+
+<!-- MONUMENTS — el lanzamiento debut (noche ámbar) -->
+<section class="nr amber hpanel" id="monuments">
+  <div class="nrin">
+    <div class="nrdisc" id="nrDisc2"></div>
+    <div class="nrleft">
+      <span class="nrlive"><i></i>THE DEBUT RELEASE — MMXXVI</span>
+      <h2 class="nrtitle">MONUMENTS</h2>
+      <p class="nrsub">Where it all started. Five cuts synthesized <b>from pure waveforms</b> — no samples, no presets — pressed to amber vinyl. Sub you feel in your chest, dust pressed into the groove, chords that answer late.</p>
+      <div id="nrMeta2"></div>
+    </div>
+  </div>
+</section>
+</div><!-- /dropsrail -->
+
+<!-- LO MEJOR — MONUMENTS × TULUM -->
+<section class="sec" id="records">
+  <div class="sh">
+    <div><span class="hk">THE BEST — MONUMENTS × TULUM</span><h2>Our best tracks.</h2></div>
+    <p>The favourite cuts from both records, side by side: the MONUMENTS ones in amber, the TULUM ones in blue. Hit play on any of them.</p>
+  </div>
+  <div class="grid" id="recordGrid"></div>
+</section>
+
+<!-- MARQUEE TULUM (azul, scroll infinito) -->
+<div class="mq blue"><div id="mqtrack2"></div></div>
+
+<!-- THE SOUND -->
+<div class="edit" id="sound">
+<div class="soundrail" id="soundrail">
+  <!-- MONUMENTS sound -->
+  <div class="soundpanel"><div class="row2">
+    <div>
+      <span class="hk">THE SOUND — MONUMENTS</span>
+      <h2>Sub grave, dust, and patience.</h2>
+      <p>This sound was born on a <b>PLINTH</b> — the sculptural DJ booths cast as one object. Music built for monuments has rules: the sub sits at <b>41–65 Hz</b> where you feel it in your chest, the needle dust stays in the mix because <b>the surface is part of the song</b>, and every chord waits two bars before it answers.</p>
+      <p>No presets. No samples. Every kick, pad and grain of dust on these records was synthesized from raw sine waves and noise — then cut to the groove.</p>
+      <ul class="speclist">
+        <li><b>FORMAT</b><i>12&Prime; AMBER VINYL — 45 RPM</i></li>
+        <li><b>SUB RANGE</b><i>41.2 — 65.4 HZ</i></li>
+        <li><b>TEMPO</b><i>112 — 122 BPM · ONE BEATLESS</i></li>
+        <li><b>SURFACE</b><i>DUST PRESSED IN, NOT REMOVED</i></li>
+        <li><b>SYNTHESIS</b><i>PURE — NO SAMPLES, NO PRESETS</i></li>
+        <li><b>TOTAL PRESSING</b><i>50 RECORDS, EVER</i></li>
+      </ul>
+    </div>
+    <div class="bigdisc" id="bigdisc"></div>
+  </div></div>
+  <!-- TULUM sound -->
+  <div class="soundpanel"><div class="row2">
+    <div>
+      <span class="hk">THE SOUND — TULUM</span>
+      <h2>One take, in sync, all night.</h2>
+      <p>TULUM is one continuous take. Sixteen movements locked to <b>121 BPM</b>, every transition beat-aligned across four bars so the pulse never breaks. It builds like a night out — arrival, the roller, the euphoric lift, the peak <b>in sync</b>, the piano at dawn — one arc, no gaps.</p>
+      <p>No stems dropped in, no DJ software. The whole set was synthesized and mixed as a single piece, then cut to <b>blue vinyl</b>.</p>
+      <ul class="speclist">
+        <li><b>FORMAT</b><i>12&Prime; BLUE VINYL — CONTINUOUS</i></li>
+        <li><b>TEMPO</b><i>121 BPM · TEMPO-LOCKED</i></li>
+        <li><b>STRUCTURE</b><i>16 MOVEMENTS · ONE TAKE</i></li>
+        <li><b>TRANSITIONS</b><i>BEAT-ALIGNED · 4 BARS</i></li>
+        <li><b>LENGTH</b><i>1H51 · IN SYNC</i></li>
+        <li><b>TOTAL PRESSING</b><i>15 RECORDS, EVER</i></li>
+      </ul>
+    </div>
+    <div class="bigdisc blue" id="bigdisc2"></div>
+  </div></div>
+</div>
+<div class="sounddots" id="sounddots"><button data-i="0" class="on" aria-label="MONUMENTS sound"></button><button data-i="1" aria-label="TULUM sound"></button></div>
+</div>
+
+<!-- LOS DOS DISCOS (después de sub grave) -->
+<section class="sec" id="vinyls">
+  <div class="sh">
+    <div><span class="hk">THE VINYL</span><h2>2024 album</h2></div>
+    <p>The collection: the amber EP and the ninety-minute set on wine-red vinyl. Hit play on a record — it plays right here and spins. When an edition sells out, the plate is retired.</p>
+  </div>
+  <div class="vgrid" id="vgrid"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec about" id="about">
+  <span class="hk">WHO IS STUDIO AMR</span>
+  <p class="lede">Studio AMR is the workshop of <i>André Macouzet Ruiz</i> — AMR, his initials — a builder from Morelia who treats every release like architecture.</p>
+  <p>The same hands behind the PLINTH monoliths cut these five records. The rule is the one pinned to the studio wall: <em>most DJ booths are furniture — this is a monument. Most tracks are content — these are records.</em> Each one is numbered by hand. None will be repressed.</p>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="own"><div class="in">
+  <span class="hk">THE PRESSING</span>
+  <h2>Fifty records<br>will <i>ever</i> exist.</h2>
+  <div class="cta-rule"><span></span><p class="price">EDITIONS OF 8 — 12 · NUMBERED BY HAND</p><span></span></div>
+  <p class="sub">Claim a number from any edition. Each record ships with its blueprint sleeve, a download code for the digital master, and the number inked on the label.</p>
+  <a class="btn solid" id="claimBtn" href="#">Claim your number</a>
+  <p class="cta-fine">TEST PRESSINGS PLAY ON THIS PAGE — THE VINYL IS THE ARTIFACT</p>
+</div></section>
+
+<footer><div class="in">
+  <span>STUDIO AMR<b>.</b> — MONUMENTS EP</span>
+  <span>CUT IN MORELIA, MX</span>
+  <span>SOUND BORN ON A <b>PLINTH</b></span>
+</div></footer>
+
+<!-- SHOTBOX — galería de producto del vinilo -->
+<div id="shotbox" class="shotbox" aria-hidden="true">
+  <div class="shot-in">
+    <button class="shot-x" id="shotX" aria-label="Close">&#10005;</button>
+    <div class="shot-imgwrap"><img class="shot-img" id="shotImg" src="" alt=""></div>
+    <div class="shot-meta">
+      <span class="hk" id="shotKick">THE VINYL</span>
+      <h3 id="shotTitle">—</h3>
+      <p id="shotDesc"></p>
+      <ul class="shot-list">
+        <li><b>12&Prime; RECORD</b><i>coloured vinyl, 45 RPM</i></li>
+        <li><b>PRINTED JACKET</b><i>blueprint sleeve</i></li>
+        <li><b>DIGITAL MASTER</b><i>download code inside</i></li>
+        <li><b>NUMBERED BY HAND</b><i>inked on the label</i></li>
+      </ul>
+      <div class="shot-cta">
+        <button class="btn solid" id="shotBuy">Claim your copy</button>
+        <span class="shot-note" id="shotNote"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PLAYER -->
+<div id="player">
+  <div class="in">
+    <div class="mdisc"></div>
+    <div class="meta"><div class="t1" id="pTitle">—</div><div class="t2" id="pCat">AMR-000 <b>·</b> — BPM</div></div>
+    <canvas id="wave"></canvas>
+    <div class="time" id="pTime">0:00 / 0:00</div>
+    <div class="ctl">
+      <button id="prevBtn" aria-label="Previous">◂◂</button>
+      <button class="play" id="playBtn" aria-label="Play/Pause">▸</button>
+      <button id="nextBtn" aria-label="Next">▸▸</button>
+    </div>
+  </div>
+</div>
+
+<script src="tracks.js"></script>
+<script src="monuments.js"></script>
+<script src="set.js"></script>
+<script src="tulum.js"></script>
+<script>
+var CONFIG = { email:'andremacouzetruiz@gmail.com', wa:'' }; // pon tu WhatsApp con lada, ej '52443...'
+
+/* ---- shotbox: galería de producto del vinilo (aparece al querer comprar) ---- */
+(function(){
+  var box = document.getElementById('shotbox'); if(!box) return;
+  var SHOTS = {
+    'amr-monuments-side':{img:'art/shots/shot-monuments.jpg', kick:'THE EP · MONUMENTS', title:'MONUMENTS', desc:'Amber 12″ pressed from pure waveforms — no samples, no presets. Ships in its printed jacket with the digital master and the number inked on the label.'},
+    'amr-set-the-set':{img:'art/shots/shot-sesion.jpg', kick:'THE SET · SESIÓN 001', title:'SESIÓN 001', desc:'The ninety-minute set on wine-red vinyl. One continuous mix, hand-numbered jacket, download code inside.'},
+    'amr-tulum':{img:'art/shots/shot-tulum.jpg', kick:'IN SYNC · TULUM', title:'TULUM', desc:'Blue 12″ — one continuous take, in sync from the first bar to the last. Numbered by hand, printed jacket, digital master included.'}
+  };
+  var current = null;
+  window.openShot = function(p){
+    var s = SHOTS[p.id]; if(!s) return;
+    current = p;
+    var img = document.getElementById('shotImg');
+    img.src = s.img; img.alt = s.title + ' — vinyl and packaging';
+    document.getElementById('shotKick').textContent = s.kick;
+    document.getElementById('shotTitle').textContent = s.title;
+    document.getElementById('shotDesc').textContent = s.desc;
+    document.getElementById('shotNote').textContent = 'EDITION OF ' + (p.edition||50) + ' · NUMBERED BY HAND';
+    box.classList.add('on'); box.setAttribute('aria-hidden','false');
+  };
+  function closeShot(){ box.classList.remove('on'); box.setAttribute('aria-hidden','true'); }
+  document.getElementById('shotX').addEventListener('click', closeShot);
+  box.addEventListener('click', function(e){ if(e.target === box) closeShot(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeShot(); });
+  document.getElementById('shotBuy').addEventListener('click', function(){
+    if(!current) return;
+    var body = "Hi Studio AMR — I want "+current.title+" on vinyl (edition of "+(current.edition||50)+").\n\nName:\nShipping address:\n";
+    if(CONFIG.wa){ window.open('https://wa.me/'+CONFIG.wa+'?text='+encodeURIComponent(body),'_blank'); }
+    else { location.href='mailto:'+CONFIG.email+'?subject='+encodeURIComponent('Studio AMR — '+current.title+' (vinyl)')+'&body='+encodeURIComponent(body); }
+  });
+})();
+
+var ROLAS = window.AMR_TRACKS || [];                           // 5 rolas (grid)
+var VINYLS = [window.AMR_MON, window.AMR_SET, window.AMR_TUL].filter(Boolean); // discos completos
+var T = ROLAS.concat(VINYLS);                                  // reproducibles: 0..4 rolas, 5.. vinilos
+var VOFF = ROLAS.length;
+window.__tulIdx = window.AMR_TUL ? VOFF + VINYLS.indexOf(window.AMR_TUL) : null;
+
+/* ---- carril de los drops: deriva sola (ida y vuelta) + arrastrable ---- */
+(function(){
+  var rail = document.getElementById('dropsrail');
+  if(!rail) return;
+  var dir = 1, paused = false, dragging = false, down = false, sx = 0, sl = 0, moved = false, idle = null, pid = null;
+  function maxScroll(){ return rail.scrollWidth - rail.clientWidth; }
+  // deriva automática lenta, rebota en los extremos
+  (function drift(){
+    requestAnimationFrame(drift);
+    if(paused || dragging || innerWidth <= 860) return;
+    var m = maxScroll();
+    if(m <= 1) return;
+    rail.scrollLeft += dir * 0.45;
+    if(rail.scrollLeft >= m){ rail.scrollLeft = m; dir = -1; }
+    else if(rail.scrollLeft <= 0){ rail.scrollLeft = 0; dir = 1; }
+  })();
+  // pausa al pasar el mouse; retoma sola tras un rato quieto
+  rail.addEventListener('mouseenter', function(){ paused = true; });
+  rail.addEventListener('mouseleave', function(){ paused = false; });
+  function resumeSoon(){ paused = true; clearTimeout(idle); idle = setTimeout(function(){ paused = false; }, 2600); }
+  // arrastrar con el mouse (touch/pen usan el scroll nativo del contenedor)
+  rail.addEventListener('pointerdown', function(e){
+    if(e.pointerType !== 'mouse' || (e.button && e.button !== 0)) return;
+    down = true; dragging = false; moved = false; sx = e.clientX; sl = rail.scrollLeft; pid = e.pointerId;
+  });
+  rail.addEventListener('pointermove', function(e){
+    if(!down) return;
+    var dx = e.clientX - sx;
+    if(!dragging){ if(Math.abs(dx) < 6) return; dragging = true; moved = true; rail.classList.add('dragging'); try{ rail.setPointerCapture(pid); }catch(_){} }
+    rail.scrollLeft = sl - dx;
+  });
+  function endDrag(){ down = false; if(!dragging) return; dragging = false; rail.classList.remove('dragging'); dir = (rail.scrollLeft > maxScroll()/2) ? -1 : 1; resumeSoon(); }
+  rail.addEventListener('pointerup', endDrag);
+  rail.addEventListener('pointercancel', endDrag);
+  // solo bloquea el play si REALMENTE hubo arrastre (>6px con mouse)
+  rail.addEventListener('click', function(e){ if(moved){ e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
+  rail.addEventListener('wheel', resumeSoon, {passive:true});
+})();
+/* hero: el disco TULUM (nuevo lanzamiento) */
+(function(){
+  var hd = document.getElementById('heroDisc'), hp = document.getElementById('heroPlay');
+  if(window.__tulIdx == null){ if(hd) hd.style.display = 'none'; return; }
+  function tgl(){ (cur === window.__tulIdx && !audio.paused) ? pause() : playTrack(window.__tulIdx); }
+  if(hd) hd.addEventListener('click', tgl);
+  if(hp) hp.addEventListener('click', tgl);
+})();
+var cur = -1, audio = new Audio(); audio.preload = 'metadata';
+
+function fmt(s){ s=Math.max(0,Math.floor(s)); return Math.floor(s/60)+':'+('0'+s%60).slice(-2); }
+function cat(t){ return t.kicker ? t.title : 'AMR-00'+t.n; }
+
+/* ---- marquee ---- */
+var mq = ROLAS.map(function(t,i){ return '<span>AMR-00'+(i+1)+' '+t.title+'</span>'; }).join('')
+       + '<span>TWO RECORDS <b>·</b> PRESS PLAY <b>·</b> WINE-RED VINYL</span>';
+document.getElementById('mqtrack').innerHTML = mq + mq;
+
+/* ---- marquee TULUM (azul, scroll infinito) ---- */
+if(window.AMR_TUL){
+  var tn = (window.AMR_TUL.titles||[]).slice(0,8).map(function(n){ return '<span>'+n+'</span>'; }).join('');
+  var mq2 = '<span>TULUM <b>·</b> IN SYNC · MMXV</span>'+tn+'<span>SIXTEEN CUTS <b>·</b> ONE CONTINUOUS TAKE</span><span>BLUE VINYL <b>·</b> NUMBERED BY HAND</span>';
+  var el2 = document.getElementById('mqtrack2'); if(el2) el2.innerHTML = mq2 + mq2;
+}
+
+/* ---- carril horizontal de THE SOUND (arrastrable + dots) ---- */
+(function(){
+  var rail = document.getElementById('soundrail'); if(!rail) return;
+  var dots = document.getElementById('sounddots');
+  var down=false, dragging=false, sx=0, sl=0, pid=null;
+  rail.addEventListener('pointerdown', function(e){ if(e.pointerType!=='mouse' || (e.button&&e.button!==0)) return; down=true; dragging=false; sx=e.clientX; sl=rail.scrollLeft; pid=e.pointerId; });
+  rail.addEventListener('pointermove', function(e){ if(!down) return; var dx=e.clientX-sx; if(!dragging){ if(Math.abs(dx)<6) return; dragging=true; rail.classList.add('dragging'); try{ rail.setPointerCapture(pid); }catch(_){} } rail.scrollLeft=sl-dx; });
+  function end(){ down=false; if(dragging){ dragging=false; rail.classList.remove('dragging'); } }
+  rail.addEventListener('pointerup', end); rail.addEventListener('pointercancel', end);
+  function upd(){ var i=Math.round(rail.scrollLeft/Math.max(1,rail.clientWidth)); if(dots) [].forEach.call(dots.children,function(b,k){ b.classList.toggle('on',k===i); }); }
+  rail.addEventListener('scroll', upd, {passive:true});
+  if(dots) [].forEach.call(dots.children, function(b,k){ b.addEventListener('click', function(){ rail.scrollTo({left:k*rail.clientWidth, behavior:'smooth'}); }); });
+})();
+
+/* ---- próximas tocadas — EDITA AQUÍ (fecha, lugar, ciudad, nota) ---- */
+var EVENTS = [
+  { m:'AUG', d:'22', y:'2026', venue:'Foro Cenoteca',  city:'Morelia, MX',        note:'Vinyl set · 3 hrs',       cta:'RSVP' },
+  { m:'SEP', d:'12', y:'2026', venue:'Departamento',    city:'Ciudad de México',   note:'TULUM live · in sync',    cta:'Tickets' },
+  { m:'OCT', d:'04', y:'2026', venue:'Bahía Cenoteca',  city:'Tulum, MX',          note:'Sunrise set',             soldout:true },
+  { m:'NOV', d:'15', y:'2026', venue:'Bar Américas',    city:'Guadalajara, MX',    note:'MONUMENTS × TULUM',       cta:'Tickets' }
+];
+(function(){
+  var el = document.getElementById('evlist'); if(!el) return;
+  el.innerHTML = EVENTS.map(function(e,i){
+    return '<li class="ev'+(e.soldout?' soldout':'')+'">'+
+      '<span class="ev-date"><b>'+e.m+' '+e.d+'</b><i>'+e.y+'</i></span>'+
+      '<span class="ev-main"><b>'+e.venue+'</b><span>'+e.city+'</span></span>'+
+      '<span class="ev-note">'+(e.note||'')+'</span>'+
+      '<button class="ev-cta" data-ev="'+i+'">'+(e.soldout?'Sold out':(e.cta||'RSVP'))+'</button>'+
+    '</li>';
+  }).join('');
+  el.addEventListener('click', function(ev){
+    var b = ev.target.closest('.ev-cta'); if(!b) return;
+    var e = EVENTS[+b.getAttribute('data-ev')]; if(!e || e.soldout) return;
+    var body = "Hi Studio AMR — I'd like to reserve for "+e.venue+" ("+e.m+' '+e.d+', '+e.city+").\n\nName:\nHow many:\n";
+    if(CONFIG.wa){ window.open('https://wa.me/'+CONFIG.wa+'?text='+encodeURIComponent(body),'_blank'); }
+    else { location.href='mailto:'+CONFIG.email+'?subject='+encodeURIComponent('Studio AMR — '+e.venue+' ('+e.m+' '+e.d+')')+'&body='+encodeURIComponent(body); }
+  });
+})();
+
+/* ---- grid LO MEJOR: naranjas (MONUMENTS) preparadas ---- */
+var grid = document.getElementById('recordGrid');
+var cardsO = [], cardsB = [];
+ROLAS.forEach(function(t,i){
+  var b = document.createElement('button');
+  b.className = 'card'; b.id = 'card-'+i;
+  b.innerHTML =
+    '<span class="num"><span>AMR-00'+t.n+' — 12&Prime; · 45 RPM</span><b>EDITION OF '+t.edition+'</b></span>'+
+    '<div class="sleeve"><div class="vinyl"><span class="lbl">AMR-00'+t.n+'</span></div>'+
+    '<div class="cover"><img src="'+t.art+'" alt="'+t.title+' blueprint sleeve"></div>'+
+    '<span class="pchip" id="chip-'+i+'">▸ PLAY</span></div>'+
+    '<h3>'+t.title+'</h3><p class="desc">'+t.desc+'</p>'+
+    '<div class="row"><b>'+(t.bpm? t.bpm+' BPM':'BEATLESS')+'</b><span>'+t.key+'</span><b>'+fmt(t.dur)+'</b></div>';
+  b.addEventListener('click', function(){ (cur===i && !audio.paused) ? pause() : playTrack(i); });
+  cardsO.push(b);
+});
+
+/* ---- cortes de TULUM en LO MEJOR (dibujos azules) ---- */
+var TPICKS = [
+  {sec:4,  file:'audio/amr-tulum-cut-metronomo.m4a',  art:'art/tulum-metronomo.svg',  desc:'The funky roller of the set — syncopated bass, off-beat claps.'},
+  {sec:5,  file:'audio/amr-tulum-cut-tarde.m4a',      art:'art/tulum-tarde.svg',      desc:'The euphoric lift — the arpeggio that opens the afternoon sky.'},
+  {sec:9,  file:'audio/amr-tulum-cut-sincronia.m4a',  art:'art/tulum-sincronia.svg',  desc:'The emotional peak — dancing in perfect sync.'},
+  {sec:13, file:'audio/amr-tulum-cut-pianoviejo.m4a', art:'art/tulum-pianoviejo.svg', desc:'The piano anthem of the home stretch. Hands up.'}
+];
+if(window.AMR_TUL){
+  TPICKS.forEach(function(tp,k){
+    var S = window.AMR_TUL, name = S.titles[tp.sec];
+    var end = (tp.sec+1 < S.offsets.length) ? S.offsets[tp.sec+1] : S.dur;
+    var dur = end - S.offsets[tp.sec];
+    tp.gi = T.length; T.push({ title:name, file:tp.file, dur:dur, kicker:'TULUM CUT', bpm:121, cut:true, edition:(S.edition||15) });
+    var b = document.createElement('button');
+    b.className = 'card bluecard'; b.id = 'card-t'+k;
+    b.innerHTML =
+      '<span class="num"><span>TULUM — CUT '+(tp.sec+1<10?'0':'')+(tp.sec+1)+'/16</span><b>BLUE VINYL</b></span>'+
+      '<div class="sleeve"><div class="vinyl"><span class="lbl">TULUM</span></div>'+
+      '<div class="cover"><img src="'+tp.art+'" alt="'+name+' blueprint"></div>'+
+      '<span class="pchip" id="chip-t'+k+'">▸ PLAY</span></div>'+
+      '<h3>'+name+'</h3><p class="desc">'+tp.desc+'</p>'+
+      '<div class="row"><b>121 BPM</b><span>FROM TULUM</span><b>'+fmt(dur)+'</b></div>';
+    b.addEventListener('click', function(){ (cur===tp.gi && !audio.paused) ? pause() : playTrack(tp.gi); });
+    cardsB.push(b);
+  });
+}
+/* mixeadas: naranja, azul, naranja, azul… */
+for(var mi = 0; mi < Math.max(cardsO.length, cardsB.length); mi++){
+  if(cardsO[mi]) grid.appendChild(cardsO[mi]);
+  if(cardsB[mi]) grid.appendChild(cardsB[mi]);
+}
+
+/* ---- los dos vinilos (después de sub grave) ---- */
+var vgrid = document.getElementById('vgrid');
+VINYLS.forEach(function(p,j){
+  var gi = VOFF + j;   // índice global en T
+  var tl = (p.titles||[]).map(function(t,k){ return '<li id="v'+j+'-tk'+k+'"><b>'+(k+1<10?'0':'')+(k+1)+'</b> '+t+'</li>'; }).join('');
+  var isFeat = (p.id === 'amr-tulum');
+  var discHTML =
+    '<div class="vdiscwrap">'+
+      '<button class="vdisc" id="vdisc-'+j+'" aria-label="Play '+p.title+'">'+
+        '<span class="vlabel"><b>'+p.title+'</b><i>'+(p.kicker||'AMR')+'</i></span>'+
+        '<span class="vhole"></span>'+
+      '</button>'+
+      '<span class="vgo" id="vgo-'+j+'">▸</span>'+
+    '</div>';
+  var statsHTML = '<div class="vstats"><span><b>'+p.tracks+'</b> TRACK'+(p.tracks>1?'S':'')+'</span><span><b>'+fmt(p.dur)+'</b></span><span>EDITION OF <b>'+p.edition+'</b></span></div>';
+  var actHTML = '<div class="vact">'+
+      '<button class="vplay" id="vplay-'+j+'">▸ PLAY THE RECORD</button>'+
+      '<button class="vbuy" id="vbuy-'+j+'">GET THE VINYL <b>·</b> ED. '+p.edition+'</button>'+
+    '</div>';
+  var infoHTML = '<div class="vinfo"><span class="vinfo-lbl">THE TRACKS <b>·</b> '+p.tracks+' CUT'+(p.tracks>1?'S':'')+'</span><ol class="vtracks">'+tl+'</ol></div>';
+  var isMonFeat = (p.id === 'amr-monuments-side');
+  if(isFeat){
+    document.getElementById('nrDisc').innerHTML = '<div class="nrrings"><span></span><span></span><span></span></div>' + discHTML;
+    document.getElementById('nrMeta').innerHTML = statsHTML + actHTML + infoHTML;
+  } else if(isMonFeat){
+    document.getElementById('nrDisc2').innerHTML = '<div class="nrrings"><span></span><span></span><span></span></div>' + discHTML;
+    document.getElementById('nrMeta2').innerHTML = statsHTML + actHTML + infoHTML;
+  } else {
+    var el = document.createElement('div');
+    el.className = 'vprod' + (p.id==='amr-set-the-set' ? ' wine' : '');
+    el.id = 'vprod-'+j;
+    var vcol = 'WINE-RED VINYL';
+    el.innerHTML = discHTML +
+      '<div class="vmeta">'+
+        '<span class="vkick">'+(p.kicker||'')+' · '+vcol+'</span>'+
+        '<h3>'+p.title+'</h3>'+
+        statsHTML + actHTML + infoHTML +
+      '</div>';
+    vgrid.appendChild(el);
+  }
+  function toggle(){ (cur===gi && !audio.paused) ? pause() : playTrack(gi); }
+  document.getElementById('vdisc-'+j).addEventListener('click', toggle);
+  document.getElementById('vplay-'+j).addEventListener('click', toggle);
+  document.getElementById('vbuy-'+j).addEventListener('click', function(){ if(window.openShot) openShot(p); });
+  // pica una canción del tracklist → salta a ese momento del mix
+  (p.titles||[]).forEach(function(t,k){
+    var li = document.getElementById('v'+j+'-tk'+k); if(!li) return;
+    li.addEventListener('click', function(){
+      var target = (p.offsets && p.offsets[k]) || 0;
+      if(cur===gi){ try{ audio.currentTime = target; }catch(e){} if(audio.paused) audio.play(); }
+      else {
+        playTrack(gi);
+        var seek = function(){ try{ audio.currentTime = target; }catch(e){} audio.play(); audio.removeEventListener('canplay', seek); };
+        audio.addEventListener('canplay', seek);
+      }
+    });
+  });
+});
+
+/* ---- player ---- */
+var player = document.getElementById('player'), playBtn = document.getElementById('playBtn');
+var waveC = document.getElementById('wave'), wctx = waveC.getContext('2d');
+
+function playTrack(i){
+  var t = T[i];
+  if(cur !== i){
+    cur = i; audio.src = t.file;
+    document.getElementById('pTitle').textContent = t.title;
+    document.getElementById('pCat').innerHTML = t.cut
+      ? (t.kicker+' <b>·</b> '+(t.bpm?t.bpm+' BPM · ':'')+fmt(t.dur))
+      : t.kicker
+      ? (t.kicker+' <b>·</b> '+t.tracks+' TRACK'+(t.tracks>1?'S':'')+' · '+fmt(t.dur))
+      : ('AMR-00'+t.n+' <b>·</b> '+(t.bpm? t.bpm+' BPM':'BEATLESS')+' · '+t.key);
+  }
+  audio.play();
+  document.body.classList.add('hasplayer');
+  player.classList.add('on');
+  syncCards();
+}
+function pause(){ audio.pause(); }
+function syncCards(){
+  // las 5 rolas (grid)
+  ROLAS.forEach(function(_,i){
+    var c = document.getElementById('card-'+i), chip = document.getElementById('chip-'+i);
+    if(!c) return;
+    var on = (i===cur && !audio.paused);
+    c.classList.toggle('playing', on);
+    chip.innerHTML = on ? '&#9646;&#9646; PLAYING' : '▸ PLAY';
+  });
+  // los 2 vinilos
+  VINYLS.forEach(function(p,j){
+    var gi = VOFF + j, on = (gi===cur && !audio.paused);
+    var d = document.getElementById('vdisc-'+j); if(d) d.classList.toggle('spinning', on);
+    var pl = document.getElementById('vplay-'+j); if(pl) pl.innerHTML = on ? '&#9646;&#9646; PLAYING' : '▸ PLAY THE RECORD';
+    var go = document.getElementById('vgo-'+j); if(go){ go.innerHTML = on ? '&#9646;&#9646;' : '▸'; go.classList.toggle('on', on); }
+    if(p.titles && gi===cur && audio.duration){
+      var ci = -1;
+      if(p.offsets){ for(var q = p.offsets.length-1; q >= 0; q--){ if(audio.currentTime >= p.offsets[q]){ ci = q; break; } } }
+      else { ci = Math.floor((audio.currentTime/audio.duration)*p.tracks); }
+      for(var k=0;k<p.tracks;k++){ var e=document.getElementById('v'+j+'-tk'+k); if(e) e.classList.toggle('on', k===ci); }
+    }
+  });
+  player.classList.toggle('playing', !audio.paused);
+  playBtn.innerHTML = audio.paused ? '▸' : '&#9646;&#9646;';
+  var bd = document.getElementById('bigdisc'); if(bd) bd.classList.toggle('spin', !audio.paused);
+  var bd2 = document.getElementById('bigdisc2'); if(bd2) bd2.classList.toggle('spin', !audio.paused);
+  // cards de TULUM en LO MEJOR: cada una es su propio corte standalone
+  if(typeof TPICKS !== 'undefined'){
+    TPICKS.forEach(function(tp,k){
+      var c = document.getElementById('card-t'+k), chip = document.getElementById('chip-t'+k);
+      if(!c) return;
+      var on2 = (cur === tp.gi && !audio.paused);
+      c.classList.toggle('playing', on2);
+      chip.innerHTML = on2 ? '&#9646;&#9646; PLAYING' : '▸ PLAY';
+    });
+  }
+}
+playBtn.addEventListener('click', function(){ if(cur<0){ playTrack(0); return; } audio.paused ? audio.play() : audio.pause(); });
+document.getElementById('nextBtn').addEventListener('click', function(){ playTrack((cur+1+T.length)%T.length); });
+document.getElementById('prevBtn').addEventListener('click', function(){ playTrack((cur-1+T.length)%T.length); });
+audio.addEventListener('play', syncCards);
+audio.addEventListener('pause', syncCards);
+audio.addEventListener('ended', function(){ if(cur < T.length-1) playTrack(cur+1); else syncCards(); });
+
+/* ---- waveform ---- */
+function sizeWave(){
+  var r = waveC.getBoundingClientRect();
+  waveC.width = r.width * devicePixelRatio; waveC.height = r.height * devicePixelRatio;
+}
+addEventListener('resize', function(){ sizeWave(); drawWave(); });
+function drawWave(){
+  if(cur<0){ wctx.clearRect(0,0,waveC.width,waveC.height); return; }
+  var pk = T[cur].peaks, W = waveC.width, H = waveC.height;
+  var prog = (audio.duration? audio.currentTime/audio.duration : 0);
+  wctx.clearRect(0,0,W,H);
+  var n = pk.length, bw = W/n;
+  for(var i=0;i<n;i++){
+    var h = Math.max(2*devicePixelRatio, pk[i]*H*0.92);
+    wctx.fillStyle = (i/n < prog) ? '#C96F2B' : 'rgba(234,230,223,0.28)';
+    wctx.fillRect(i*bw, (H-h)/2, Math.max(1, bw*0.6), h);
+  }
+}
+(function loop(){ drawWave(); requestAnimationFrame(loop); })();
+sizeWave();
+waveC.addEventListener('click', function(e){
+  if(cur<0 || !audio.duration) return;
+  var r = waveC.getBoundingClientRect();
+  audio.currentTime = (e.clientX - r.left)/r.width * audio.duration;
+});
+audio.addEventListener('timeupdate', function(){
+  document.getElementById('pTime').textContent = fmt(audio.currentTime)+' / '+fmt(audio.duration||T[cur].dur);
+  syncCards(); // resalta en vivo la sección/canción que va sonando
+});
+
+/* ---- intro ---- */
+function closeIntro(andPlay){
+  var iv = document.getElementById('intro');
+  iv.classList.add('out'); document.body.classList.remove('lock');
+  document.body.classList.add('hero-in');
+  if(andPlay) playTrack(window.__tulIdx != null ? window.__tulIdx : 0);
+}
+document.getElementById('dropBtn').addEventListener('click', function(){ closeIntro(true); });
+document.getElementById('skipBtn').addEventListener('click', function(){ closeIntro(false); });
+
+/* ---- claim ---- */
+document.getElementById('claimBtn').addEventListener('click', function(e){
+  e.preventDefault();
+  var body = "Hi Studio AMR — I want to claim a record.\n\nRecord: AMR-00_ (PLINTH / MONOLITH / VESSEL / STRATA / GHOST)\nName:\n";
+  if(CONFIG.wa){ window.open('https://wa.me/'+CONFIG.wa+'?text='+encodeURIComponent(body),'_blank'); }
+  else { location.href = 'mailto:'+CONFIG.email+'?subject='+encodeURIComponent('AMR — Claim a record')+'&body='+encodeURIComponent(body); }
+});
+
+/* ---- reveal ---- */
+addEventListener('DOMContentLoaded', function(){
+  var targets = [].slice.call(document.querySelectorAll('.mq, .sh, .card, .edit .row2 > *, .about > *, .cta .in'));
+  targets.forEach(function(el){
+    el.classList.add('reveal');
+    var sibs = [].filter.call(el.parentElement.children, function(n){ return n.classList.contains('card'); });
+    var idx = sibs.indexOf(el);
+    if(idx > -1) el.style.transitionDelay = (idx % 3) * 0.1 + 's';
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  targets.forEach(function(el){ io.observe(el); });
+});
+</script>
+<script>
+/* preview del portafolio: entra directo a los vinilos (sin el intro) */
+(function(){
+  function goVinyls(){
+    var v=document.getElementById('vinyls'); if(!v) return;
+    var y=v.getBoundingClientRect().top+(window.scrollY||0);
+    var html=document.documentElement, prev=html.style.scrollBehavior;
+    html.style.scrollBehavior='auto'; window.scrollTo(0,y); html.style.scrollBehavior=prev;
+  }
+  function enter(){
+    try{
+      var s=document.getElementById('skipBtn'); if(s) s.click();
+      var iv=document.getElementById('intro'); if(iv) iv.classList.add('out');
+      document.body.classList.remove('lock'); document.body.classList.add('hero-in');
+    }catch(e){}
+    [500,900,1400,2100].forEach(function(ms){ setTimeout(goVinyls, ms); });  // reintenta por si la app re-scrollea
+  }
+  if (document.readyState === 'complete') setTimeout(enter, 250);
+  else addEventListener('load', function(){ setTimeout(enter, 250); });
+})();
+</script>
+</body></html>
